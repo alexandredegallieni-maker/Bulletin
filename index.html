@@ -96,7 +96,7 @@ border-radius:6px;text-decoration:none;border:2px solid var(--plaque);text-align
 .proof{display:grid;gap:18px;background:var(--card);border:1px solid var(--line);border-left:5px solid var(--plaque);border-radius:8px;padding:20px}
 @media (min-width:720px){.proof{grid-template-columns:auto 1fr;align-items:center;gap:28px;padding:26px 28px}}
 .big{font:700 clamp(46px,11vw,64px)/1 var(--serif);color:var(--plaque);white-space:nowrap}
-.big small{font:600 18px var(--sans);color:var(--muted);display:block;margin-top:6px;white-space:normal}
+.big small{font:600 18px var(--sans);color:var(--muted);display:block;margin-top:6px;white-space:normal;max-width:15ch}
 .proof p{margin:0 0 10px}.proof p:last-child{margin:0}
 .note{font-size:14px;color:var(--muted)}
 .quote{background:var(--soft);border-radius:6px;padding:10px 14px;font-size:16px;margin:0 0 10px}
@@ -273,9 +273,9 @@ ol.act b{font:700 15px/1.3 var(--display)}ol.act p{margin:2px 0 0;font-size:14px
   <section class="sec" aria-labelledby="preuve">
     <h2 id="preuve" class="sr">Ce que j'ai constaté</h2>
     <div class="proof">
-      <div class="big">6 sur 30<small>commerces testés</small></div>
+      <div class="big">77 %<small>des commerces testés avaient un problème</small></div>
       <div>
-        <p><b>Début octobre 2026, j'ai testé 30 commerces indépendants parisiens.</b> Pour 6 d'entre eux, ChatGPT ou Perplexity donnait des horaires faux, et répétait l'erreur quand on reposait la question.</p>
+        <p><b>Début octobre 2026, j'ai testé 30 commerces indépendants parisiens.</b> Pour 23 d'entre eux, une IA donnait de fausses informations (des horaires faux, répétés quand on reposait la question) ou ne les recommandait pas du tout dans leur quartier.</p>
         <div class="quote"><b>Perplexity, à propos d'un institut du 19e fermé le lundi</b>« Lundi 12/10 : oui, 10h–19h30 »</div>
         <p class="note">Restaurants, salons et instituts parisiens, testés un par un. C'est un petit échantillon, pas une statistique nationale.</p>
       </div>
