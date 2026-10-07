@@ -196,6 +196,7 @@ font:700 16px/32px var(--sans);text-align:center}
 .err-msg{color:var(--bad);font-size:14px}
 .err-msg:empty{display:none}
 .audit .btn.p{width:100%}
+[hidden]{display:none!important}
 .done{display:none;background:var(--good-bg);border-radius:8px;padding:16px;margin-top:6px}
 .done.on{display:block}
 .done textarea{width:100%;min-height:150px;font:15px/1.45 var(--sans);padding:10px;border:1px solid var(--line);border-radius:6px;background:var(--card);color:var(--ink)}
@@ -467,7 +468,8 @@ ol.act b{font:700 15px/1.3 var(--display)}ol.act p{margin:2px 0 0;font-size:14px
     <div class="audit">
       <h2 id="audit-titre">Recevoir mon audit gratuit</h2>
       <p>Trois informations suffisent. Je vous envoie le résultat par e-mail.</p>
-      <form id="audit-form" novalidate data-endpoint="">
+      <form id="audit-form" novalidate data-endpoint="formsubmit">
+        <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
         <div class="field"><label for="f-nom">Nom du commerce</label>
           <input id="f-nom" name="commerce" autocomplete="organization" required aria-describedby="e-nom"><span class="err-msg" id="e-nom"></span></div>
         <div class="field"><label for="f-ville">Ville ou arrondissement <small>(ex.&nbsp;: Paris 11e)</small></label>
@@ -479,12 +481,14 @@ ol.act b{font:700 15px/1.3 var(--display)}ol.act p{margin:2px 0 0;font-size:14px
       </form>
       <div class="done" id="audit-done" role="status" tabindex="-1">
         <p id="done-txt"><b>Votre message est prêt.</b> Si votre messagerie s'est ouverte, il ne reste qu'à cliquer sur Envoyer.</p>
+        <div id="done-fallback">
         <p style="font-size:15px">Rien ne s'est ouvert&nbsp;? Envoyez-le en un clic depuis votre boîte mail&nbsp;:</p>
         <div class="mailrow" style="margin:0 0 14px"><a class="copy" id="open-gmail" target="_blank" rel="noopener" data-track="audit_gmail">Ouvrir dans Gmail</a><a class="copy" id="open-outlook" target="_blank" rel="noopener" data-track="audit_outlook">Ouvrir dans Outlook</a></div>
         <p style="font-size:15px">Ou copiez ce message et envoyez-le à l'adresse ci-dessous.</p>
         <label class="sr" for="done-msg">Message à envoyer</label>
         <textarea id="done-msg" readonly></textarea>
         <div class="mailrow"><button type="button" class="copy" id="copy-msg">Copier le message</button></div>
+        </div>
       </div>
       <p class="mailrow">Vous préférez écrire vous-même&nbsp;? <span class="mail" data-u="ineillag.ed.erdnaxela" data-d="moc.liamg">alexandre.de.gallieni [arobase] gmail [point] com</span> <button type="button" class="copy" id="copy-mail">Copier l'adresse</button></p>
     </div>
@@ -512,7 +516,7 @@ ol.act b{font:700 15px/1.3 var(--display)}ol.act p{margin:2px 0 0;font-size:14px
         </div>
         <div>
           <h3>Données personnelles</h3>
-          <p>Seules des données professionnelles publiées par les commerces sont utilisées, pour leur proposer et leur fournir le bulletin. Le formulaire d'audit n'enregistre rien sur ce site&nbsp;: il prépare un e-mail que vous envoyez vous-même. Accès, rectification, suppression ou opposition à tout nouveau contact : par e-mail à l'adresse ci-dessus. Vous pouvez aussi saisir la CNIL (cnil.fr). Cette page ne contient aucun outil publicitaire ni de mesure d'audience.</p>
+          <p>Seules des données professionnelles publiées par les commerces sont utilisées, pour leur proposer et leur fournir le bulletin. Le formulaire d'audit n'enregistre rien sur ce site&nbsp;: il transmet votre demande par e-mail via le service FormSubmit (formsubmit.co), uniquement pour vous répondre. Accès, rectification, suppression ou opposition à tout nouveau contact : par e-mail à l'adresse ci-dessus. Vous pouvez aussi saisir la CNIL (cnil.fr). Cette page ne contient aucun outil publicitaire ni de mesure d'audience.</p>
         </div>
       </div>
     </details>
@@ -569,11 +573,19 @@ ol.act b{font:700 15px/1.3 var(--display)}ol.act p{margin:2px 0 0;font-size:14px
       window.location.href="mailto:"+addr+"?subject="+encodeURIComponent(subject)+"&body="+encodeURIComponent(body);
     }
     var ep=form.getAttribute("data-endpoint");
+    if(ep==="formsubmit")ep="https://formsubmit.co/ajax/"+addr;
+    else if(ep.indexOf("formsubmit:")===0)ep="https://formsubmit.co/ajax/"+ep.slice(11);
     if(ep&&window.fetch){
-      fetch(ep,{method:"POST",headers:{"Accept":"application/json"},body:new FormData(form)}).then(function(res){
-        if(!res.ok)throw new Error("envoi");
-        document.getElementById("done-txt").innerHTML="<b>C'est envoyé.</b> Je vous réponds par e-mail.";
-        form.hidden=true;box.classList.add("on");box.focus()}).catch(openMail);
+      var fd=new FormData(form);fd.append("_subject",subject);fd.append("_template","table");fd.append("_captcha","false");
+      var sb=form.querySelector("button[type=submit]");sb.disabled=true;sb.textContent="Envoi…";
+      fetch(ep,{method:"POST",headers:{"Accept":"application/json"},body:fd}).then(function(res){
+        if(!res.ok)throw new Error("envoi");return res.json()}).then(function(j){
+        if(j&&(j.success===false||j.success==="false"))throw new Error("envoi");
+        track("audit_envoye");
+        document.getElementById("done-txt").innerHTML="<b>C'est envoyé.</b> Je vous réponds par e-mail à l'adresse indiquée.";
+        document.getElementById("done-fallback").hidden=true;
+        form.hidden=true;box.classList.add("on");box.focus()}).catch(function(){
+        sb.disabled=false;sb.textContent="Recevoir mon audit gratuit";openMail()});
     }else{openMail()}
   });
 })();
