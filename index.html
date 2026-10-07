@@ -96,6 +96,7 @@ border-radius:6px;text-decoration:none;border:2px solid var(--plaque);text-align
 .proof{display:grid;gap:18px;background:var(--card);border:1px solid var(--line);border-left:5px solid var(--plaque);border-radius:8px;padding:20px}
 @media (min-width:720px){.proof{grid-template-columns:auto 1fr;align-items:center;gap:28px;padding:26px 28px}}
 .big{font:700 clamp(46px,11vw,64px)/1 var(--serif);color:var(--plaque);white-space:nowrap}
+.big small.pre{margin:0 0 4px}
 .big small{font:600 18px var(--sans);color:var(--muted);display:block;margin-top:6px;white-space:normal;max-width:15ch}
 .proof p{margin:0 0 10px}.proof p:last-child{margin:0}
 .note{font-size:14px;color:var(--muted)}
@@ -200,7 +201,7 @@ font:700 16px/32px var(--sans);text-align:center}
 .done textarea{width:100%;min-height:150px;font:15px/1.45 var(--sans);padding:10px;border:1px solid var(--line);border-radius:6px;background:var(--card);color:var(--ink)}
 .mail{font-weight:700;color:var(--ink);word-break:break-all}
 .mailrow{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:16px 0 0;font-size:15px}
-.copy{font:600 14px var(--sans);border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:6px;padding:10px 12px;min-height:44px;cursor:pointer}
+.copy{display:inline-flex;align-items:center;text-decoration:none;font:600 14px var(--sans);border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:6px;padding:10px 12px;min-height:44px;cursor:pointer}
 /* Pied de page */
 footer{padding-block:28px 40px;border-top:1px solid var(--line);font:14px/1.6 var(--sans);color:var(--muted)}
 footer details{margin-top:10px}
@@ -273,7 +274,7 @@ ol.act b{font:700 15px/1.3 var(--display)}ol.act p{margin:2px 0 0;font-size:14px
   <section class="sec" aria-labelledby="preuve">
     <h2 id="preuve" class="sr">Ce que j'ai constaté</h2>
     <div class="proof">
-      <div class="big">77 %<small>des commerces testés avaient un problème</small></div>
+      <div class="big"><small class="pre">Près de</small>8 sur 10<small>commerces testés avaient un problème</small></div>
       <div>
         <p><b>Début octobre 2026, j'ai testé 30 commerces indépendants parisiens.</b> Pour 23 d'entre eux, une IA donnait de fausses informations (des horaires faux, répétés quand on reposait la question) ou ne les recommandait pas du tout dans leur quartier.</p>
         <div class="quote"><b>Perplexity, à propos d'un institut du 19e fermé le lundi</b>« Lundi 12/10 : oui, 10h–19h30 »</div>
@@ -477,8 +478,10 @@ ol.act b{font:700 15px/1.3 var(--display)}ol.act p{margin:2px 0 0;font-size:14px
         <p class="reass" style="margin:0">Gratuit · sans carte bancaire · sans engagement</p>
       </form>
       <div class="done" id="audit-done" role="status" tabindex="-1">
-        <p id="done-txt"><b>Votre messagerie s'ouvre avec le message prêt.</b> Il ne reste qu'à cliquer sur Envoyer.</p>
-        <p style="font-size:15px">Rien ne s'est ouvert&nbsp;? Copiez ce message et envoyez-le à l'adresse ci-dessous.</p>
+        <p id="done-txt"><b>Votre message est prêt.</b> Si votre messagerie s'est ouverte, il ne reste qu'à cliquer sur Envoyer.</p>
+        <p style="font-size:15px">Rien ne s'est ouvert&nbsp;? Envoyez-le en un clic depuis votre boîte mail&nbsp;:</p>
+        <div class="mailrow" style="margin:0 0 14px"><a class="copy" id="open-gmail" target="_blank" rel="noopener" data-track="audit_gmail">Ouvrir dans Gmail</a><a class="copy" id="open-outlook" target="_blank" rel="noopener" data-track="audit_outlook">Ouvrir dans Outlook</a></div>
+        <p style="font-size:15px">Ou copiez ce message et envoyez-le à l'adresse ci-dessous.</p>
         <label class="sr" for="done-msg">Message à envoyer</label>
         <textarea id="done-msg" readonly></textarea>
         <div class="mailrow"><button type="button" class="copy" id="copy-msg">Copier le message</button></div>
@@ -557,6 +560,9 @@ ol.act b{font:700 15px/1.3 var(--display)}ol.act p{margin:2px 0 0;font-size:14px
     var body="Bonjour Alexandre,\n\nJe souhaite recevoir l'audit gratuit de ce que disent les IA sur mon commerce.\n\n"+
       "Commerce : "+nom+"\nVille ou arrondissement : "+ville+"\nE-mail : "+mail+"\n\nMerci,\n";
     msg.value="À : "+addr+"\nObjet : "+subject+"\n\n"+body;
+    var es=encodeURIComponent(subject),eb=encodeURIComponent(body),ea=encodeURIComponent(addr);
+    document.getElementById("open-gmail").href="https://mail.google.com/mail/?view=cm&fs=1&to="+ea+"&su="+es+"&body="+eb;
+    document.getElementById("open-outlook").href="https://outlook.live.com/mail/0/deeplink/compose?to="+ea+"&subject="+es+"&body="+eb;
     track("audit_form_valide");
     function openMail(){
       box.classList.add("on");box.focus();
