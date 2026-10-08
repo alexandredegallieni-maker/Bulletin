@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Page introuvable | Bulletin IA</title><meta name="robots" content="noindex">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,700&family=Public+Sans:wght@400;600;700&display=swap">
+<style>
+:root{--paper:#f6f7f9;--card:#ffffff;--ink:#14213a;--muted:#5b6578;--line:#dde2ea;
+--plaque:#1d3b72;--plaque-ink:#ffffff;--bad:#b3261e;--bad-bg:#fbeceb;--warn:#8a5a00;--warn-bg:#fdf3e1;
+--good:#1f6b43;--good-bg:#e8f4ed;--quote:#eef1f7;
+--display:"Familjen Grotesk","Helvetica Neue",Arial,sans-serif;--body:"Public Sans","Segoe UI",Arial,sans-serif;
+--mono:"IBM Plex Mono",ui-monospace,Menlo,monospace}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#0f1420;--card:#171e2d;--ink:#e8ecf3;
+--muted:#9aa5b8;--line:#2a3447;--plaque:#3d63ad;--bad:#ff8a80;--bad-bg:#3a1d1c;--warn:#f0b955;--warn-bg:#352a14;
+--good:#7fd1a2;--good-bg:#173226;--quote:#202a3d;color-scheme:dark}}
+:root[data-theme="dark"]{--paper:#0f1420;--card:#171e2d;--ink:#e8ecf3;--muted:#9aa5b8;--line:#2a3447;--plaque:#3d63ad;
+--bad:#ff8a80;--bad-bg:#3a1d1c;--warn:#f0b955;--warn-bg:#352a14;--good:#7fd1a2;--good-bg:#173226;--quote:#202a3d;color-scheme:dark}
+
+:root{--serif:"Source Serif 4",Georgia,"Times New Roman",serif;--sans:"Public Sans","Segoe UI",Arial,sans-serif;--focus:#c2410c}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--focus:#fdba74}}
+:root[data-theme="dark"]{--focus:#fdba74}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.65 var(--sans);-webkit-font-smoothing:antialiased;overflow-wrap:break-word}
+a{color:var(--plaque);text-underline-offset:3px}
+:focus-visible{outline:3px solid var(--focus);outline-offset:2px;border-radius:4px}
+.skip{position:absolute;left:12px;top:-60px;background:var(--card);color:var(--ink);padding:10px 14px;border-radius:6px;z-index:9;font-weight:600}
+.skip:focus{top:12px}
+.w{max-width:760px;margin:0 auto;padding-inline:16px}
+@media (min-width:600px){.w{padding-inline:24px}}
+h1,h2,h3{font-family:var(--serif);text-wrap:balance;letter-spacing:-.01em;line-height:1.18;margin:0}
+h1{font-size:clamp(30px,6.4vw,44px);margin:0 0 16px}
+h2{font-size:clamp(23px,4vw,29px);margin:40px 0 12px}
+h3{font-size:19px;margin:24px 0 8px}
+p{margin:0 0 14px}
+ul,ol{margin:0 0 16px;padding-left:22px}
+li{margin-bottom:6px}
+.top{padding-block:16px;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.plaque{display:inline-grid;background:var(--plaque);color:#fff;border-radius:7px;padding:6px 14px 5px;text-align:center;text-decoration:none;
+box-shadow:inset 0 0 0 2px var(--plaque),inset 0 0 0 4px #fff;flex:none}
+.plaque small{font:600 8.5px/1.3 var(--sans);letter-spacing:.16em;text-transform:uppercase;opacity:.9}
+.plaque b{font:700 18px/1.15 var(--serif)}
+.navcta{color:var(--plaque);font-weight:700;border:2px solid var(--plaque);border-radius:6px;padding:9px 12px;white-space:nowrap;text-decoration:none;font-size:15px}
+.crumb{font-size:14px;color:var(--muted);margin:8px 0 18px}
+.crumb a{color:var(--muted)}
+.meta{font-size:14px;color:var(--muted);margin-bottom:22px}
+.answer{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--plaque);border-radius:8px;padding:18px 20px;font-size:18px;margin-bottom:8px}
+.answer p:last-child{margin:0}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,160px),1fr));gap:12px;margin:18px 0 8px}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:14px 16px}
+.kpi b{display:block;font:700 30px/1.1 var(--serif);color:var(--plaque)}
+.kpi span{font-size:15px;color:var(--muted)}
+.tbl{overflow-x:auto;margin:0 0 16px;border:1px solid var(--line);border-radius:8px;background:var(--card)}
+table{border-collapse:collapse;width:100%;font-size:15px}
+th,td{text-align:left;vertical-align:top;padding:10px 12px;border-bottom:1px solid var(--line)}
+th{font-weight:700;background:var(--quote)}
+tr:last-child td{border-bottom:0}
+.note{font-size:14px;color:var(--muted)}
+details{border-top:1px solid var(--line);padding:4px 0}
+details:last-of-type{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;font-weight:600;padding:10px 0;min-height:44px}
+.cta{margin:40px 0 8px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:22px}
+.cta h2{margin-top:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;font:700 17px/1.2 var(--sans);padding:14px 22px;
+border-radius:6px;text-decoration:none;border:2px solid var(--plaque);background:var(--plaque);color:#fff}
+@media (max-width:519px){.btn{width:100%}}
+.reass{font-size:15px;color:var(--muted);margin:10px 0 0}
+.author{display:flex;gap:14px;align-items:center;margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:15px}
+.author img{border-radius:50%;flex:none}
+.more{margin:32px 0 0}
+footer{margin-top:48px;padding-block:24px 36px;border-top:1px solid var(--line);font:14px/1.6 var(--sans);color:var(--muted)}
+footer a{color:var(--muted)}
+</style></head>
+<body><div class="w"><header class="top"><a class="plaque" href="/" aria-label="Bulletin IA, accueil"><small>Paris · chaque mois</small><b>Bulletin IA</b></a></header>
+<main><h1>Cette page n'existe pas</h1><p>Elle a peut-être été déplacée. Vous pouvez revenir à <a href="/">l'accueil</a> ou demander directement votre <a href="/#audit">audit gratuit</a>.</p></main></div></body></html>
