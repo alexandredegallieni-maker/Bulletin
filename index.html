@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="ChatGPT, Gemini, Claude ou Perplexity donnent-ils les bonnes informations sur votre commerce ? Recevez un audit gratuit, puis des corrections et améliorations chaque mois à partir de 29 €.">
+<meta name="description" content="Restaurants, coiffeurs, instituts à Paris : qui ChatGPT et les autres IA conseillent dans votre quartier, et ce qu&#x27;elles disent de vous. Audit gratuit.">
 <link rel="canonical" href="https://bulletin-ia.fr/">
 <meta name="robots" content="index,follow">
 <meta name="theme-color" content="#1d3b72">
@@ -12,18 +12,18 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="fr_FR">
 <meta property="og:site_name" content="Bulletin IA">
-<meta property="og:title" content="Ce que ChatGPT dit de votre commerce : audit IA gratuit | Bulletin IA">
-<meta property="og:description" content="ChatGPT, Gemini, Claude ou Perplexity donnent-ils les bonnes informations sur votre commerce ? Recevez un audit gratuit, puis des corrections et améliorations chaque mois à partir de 29 €.">
+<meta property="og:title" content="ChatGPT conseille-t-il votre commerce ? Audit gratuit | Bulletin IA">
+<meta property="og:description" content="Restaurants, coiffeurs, instituts à Paris : qui ChatGPT et les autres IA conseillent dans votre quartier, et ce qu&#x27;elles disent de vous. Audit gratuit.">
 <meta property="og:url" content="https://bulletin-ia.fr/">
 <meta property="og:image" content="https://bulletin-ia.fr/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Bulletin IA : ChatGPT donne-t-il les bonnes informations sur votre commerce ?">
+<meta property="og:image:alt" content="Bulletin IA : ChatGPT conseille-t-il votre commerce, ou celui d'à côté ?">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Ce que ChatGPT dit de votre commerce : audit IA gratuit | Bulletin IA">
-<meta name="twitter:description" content="ChatGPT, Gemini, Claude ou Perplexity donnent-ils les bonnes informations sur votre commerce ? Recevez un audit gratuit, puis des corrections et améliorations chaque mois à partir de 29 €.">
+<meta name="twitter:title" content="ChatGPT conseille-t-il votre commerce ? Audit gratuit | Bulletin IA">
+<meta name="twitter:description" content="Restaurants, coiffeurs, instituts à Paris : qui ChatGPT et les autres IA conseillent dans votre quartier, et ce qu&#x27;elles disent de vous. Audit gratuit.">
 <meta name="twitter:image" content="https://bulletin-ia.fr/og.png">
-<title>Ce que ChatGPT dit de votre commerce : audit IA gratuit | Bulletin IA</title>
+<title>ChatGPT conseille-t-il votre commerce ? Audit gratuit | Bulletin IA</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,700&family=Public+Sans:wght@400;600;700&display=swap">
@@ -142,6 +142,14 @@ border-radius:6px;text-decoration:none;border:2px solid var(--plaque);text-align
 .strong{font:700 clamp(21px,3.4vw,26px)/1.3 var(--serif);margin:24px 0 0;max-width:var(--text)}
 /* Ce que vous recevez */
 .plain{margin:0 0 20px;padding-left:20px;display:grid;gap:6px}
+.offers{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:12px;max-width:820px;margin-top:6px}
+.offer{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:18px 18px 16px;display:grid;gap:10px;align-content:start}
+.offer.top{border:2px solid var(--plaque)}
+.offer ul{margin:0;padding-left:20px;display:grid;gap:6px;font-size:15px}
+.oname{font:700 21px/1.2 var(--serif);margin:0;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:4px 12px}
+.oname span{font:700 15px var(--sans);color:var(--plaque);white-space:nowrap}
+.ofoot{margin:0;font-size:14px;color:var(--muted)}
+.badge{justify-self:start;margin:0;font:700 12px/1 var(--sans);letter-spacing:.06em;text-transform:uppercase;color:#fff;background:var(--plaque);border-radius:99px;padding:6px 10px}
 .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:12px}
 .step{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:16px}
 .step .where{font:700 13px var(--sans);color:var(--plaque);text-transform:uppercase;letter-spacing:.06em}
@@ -161,6 +169,8 @@ font:700 16px/32px var(--sans);text-align:center}
 .price .amt small{font:500 16px var(--sans);color:var(--muted)}
 .price p{margin:0;font-size:15px}
 .price .btn{margin-top:6px}
+.price.top{border:2px solid var(--plaque)}
+.price .alt{margin-top:10px;padding-top:12px;border-top:1px solid var(--line)}
 .free{background:var(--good-bg);color:var(--ink);border-radius:8px;padding:14px 16px;max-width:var(--text);margin-bottom:16px}
 .free b{color:var(--good)}
 .promise{border-left:4px solid var(--plaque);padding:4px 0 4px 16px;max-width:var(--text);margin-top:22px}
@@ -262,20 +272,20 @@ ol.et{margin:6px 0 0;padding-left:18px;font-size:14px;display:grid;gap:3px}
 .met p{margin:0 0 6px}
 
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://bulletin-ia.fr/#site", "url": "https://bulletin-ia.fr/", "name": "Bulletin IA", "inLanguage": "fr-FR"}, {"@type": "ProfessionalService", "@id": "https://bulletin-ia.fr/#service", "name": "Bulletin IA", "url": "https://bulletin-ia.fr/", "description": "Vérification mensuelle de ce que ChatGPT, Gemini, Claude et Perplexity disent des commerces indépendants, avec les corrections à faire quand une information est fausse.", "areaServed": [{"@type": "City", "name": "Paris"}, {"@type": "Country", "name": "France"}], "priceRange": "0 € – 29 €/mois", "founder": {"@type": "Person", "@id": "https://bulletin-ia.fr/#alexandre", "name": "Alexandre", "url": "https://bulletin-ia.fr/#qui", "jobTitle": "Fondateur de Bulletin IA"}, "logo": "https://bulletin-ia.fr/apple-touch-icon.png", "image": "https://bulletin-ia.fr/og.png", "address": {"@type": "PostalAddress", "addressLocality": "Paris", "addressCountry": "FR"}, "knowsAbout": ["Assistants IA", "ChatGPT", "Référencement local", "GEO"]}, {"@type": "Service", "name": "Bulletin IA : audit et corrections chaque mois", "serviceType": "Vérification des informations données par les assistants IA sur un commerce", "provider": {"@id": "https://bulletin-ia.fr/#service"}, "areaServed": {"@type": "Country", "name": "France"}, "offers": [{"@type": "Offer", "name": "Audit initial", "price": "0", "priceCurrency": "EUR"}, {"@type": "Offer", "name": "Formule mensuelle", "price": "29", "priceCurrency": "EUR", "url": "https://buy.stripe.com/fZu4gB0KB3ow2JXfL63Ru00", "description": "Par établissement et par mois, TTC, sans engagement."}, {"@type": "Offer", "name": "Formule annuelle", "price": "290", "priceCurrency": "EUR", "url": "https://buy.stripe.com/5kQ4gB9h77EMacpcyU3Ru01", "description": "Par établissement et par an, TTC."}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "L'audit est-il vraiment gratuit ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui. Pas de carte bancaire, pas d'engagement. Vous recevez le résultat complet par e-mail. Si la formule mensuelle ne vous intéresse pas, vous gardez l'audit et je ne vous relance pas."}}, {"@type": "Question", "name": "Ce que je vois sur mon téléphone peut-il être différent ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui. Une IA ne répond pas toujours la même chose : ça dépend du compte, du lieu, de la formulation et du jour. C'est pour ça que je pose chaque question plusieurs fois et que je ne retiens une erreur que si elle revient au moins deux fois sur trois. Je le rappelle dans chaque bulletin."}}, {"@type": "Question", "name": "Allez-vous me faire recommander par ChatGPT ?", "acceptedAnswer": {"@type": "Answer", "text": "Non, et je me méfierais de quelqu'un qui vous le promet. Des informations justes et cohérentes partout sont la base, mais le choix final appartient à l'IA."}}, {"@type": "Question", "name": "Qu'est-ce que j'ai à faire de mon côté ?", "acceptedAnswer": {"@type": "Answer", "text": "Appliquer les corrections du mois depuis vos comptes habituels : fiche Google, PagesJaunes, Planity ou Treatwell, votre site. Je vous dis exactement où et quoi changer. Je ne vous demande aucun mot de passe."}}, {"@type": "Question", "name": "Comment arrêter l'abonnement ?", "acceptedAnswer": {"@type": "Answer", "text": "Un e-mail suffit, à tout moment. L'arrêt prend effet à la fin de la période déjà payée : au mois pour la formule mensuelle, à l'année pour la formule annuelle. Pas de durée minimale."}}, {"@type": "Question", "name": "Comment se passe le paiement ?", "acceptedAnswer": {"@type": "Answer", "text": "Par carte, sur la page de paiement sécurisée de Stripe. Je ne vois jamais votre numéro de carte. Vous recevez une facture par e-mail."}}, {"@type": "Question", "name": "J'ai plusieurs établissements.", "acceptedAnswer": {"@type": "Answer", "text": "Chaque établissement a son propre bulletin. Au moment du paiement, vous choisissez le nombre d'établissements, jusqu'à 3."}}, {"@type": "Question", "name": "Que gardez-vous comme informations sur moi ?", "acceptedAnswer": {"@type": "Answer", "text": "Seulement des informations professionnelles publiques : le nom du commerce, l'adresse, le site, le téléphone et l'e-mail professionnels, et ce que les IA disent de vous. Sur simple demande, je supprime tout et je ne vous écris plus."}}]}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://bulletin-ia.fr/#site", "url": "https://bulletin-ia.fr/", "name": "Bulletin IA", "inLanguage": "fr-FR"}, {"@type": "ProfessionalService", "@id": "https://bulletin-ia.fr/#service", "name": "Bulletin IA", "url": "https://bulletin-ia.fr/", "description": "Pour les restaurants, coiffeurs et instituts de beauté indépendants à Paris : ce que ChatGPT, Gemini, Claude et Perplexity disent d'eux et qui ils conseillent dans leur quartier, les corrections à faire, et la gestion de leur fiche Google.", "areaServed": [{"@type": "City", "name": "Paris"}, {"@type": "Country", "name": "France"}], "priceRange": "0 € – 79 €/mois", "founder": {"@type": "Person", "@id": "https://bulletin-ia.fr/#alexandre", "name": "Alexandre", "url": "https://bulletin-ia.fr/#qui", "jobTitle": "Fondateur de Bulletin IA"}, "logo": "https://bulletin-ia.fr/apple-touch-icon.png", "image": "https://bulletin-ia.fr/og.png", "address": {"@type": "PostalAddress", "addressLocality": "Paris", "addressCountry": "FR"}, "knowsAbout": ["Assistants IA", "ChatGPT", "Référencement local", "GEO", "Fiche Google Business Profile"]}, {"@type": "Service", "name": "Bulletin IA : ce que les IA disent de votre commerce, et qui elles conseillent", "serviceType": "Audit et suivi des réponses des assistants IA sur un commerce, gestion de fiche Google", "provider": {"@id": "https://bulletin-ia.fr/#service"}, "areaServed": {"@type": "City", "name": "Paris"}, "offers": [{"@type": "Offer", "name": "Audit gratuit", "price": "0", "priceCurrency": "EUR", "description": "Qui l'IA conseille dans votre quartier, ce qu'elle dit de vous, ce qu'il faut corriger et où."}, {"@type": "Offer", "name": "Je vous guide, au mois", "price": "29", "priceCurrency": "EUR", "url": "https://buy.stripe.com/fZu4gB0KB3ow2JXfL63Ru00", "description": "Bulletin mensuel et corrections pas à pas avec les textes rédigés. Par établissement et par mois, TTC, sans engagement."}, {"@type": "Offer", "name": "Je vous guide, à l'année", "price": "290", "priceCurrency": "EUR", "url": "https://buy.stripe.com/5kQ4gB9h77EMacpcyU3Ru01", "description": "Par établissement et par an, TTC, avec un appel de 15 minutes."}, {"@type": "Offer", "name": "Je m'en occupe", "price": "79", "priceCurrency": "EUR", "url": "https://buy.stripe.com/fZudRbctjcZ6fwJ8iE3Ru02", "description": "Fiche Google tenue à jour, 4 publications par mois, réponse à chaque nouvel avis, bulletin mensuel. Par établissement et par mois, TTC, sans engagement."}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "L'audit est-il vraiment gratuit ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui. Pas de carte bancaire, pas d'engagement. Vous recevez le résultat par e-mail. Si les formules ne vous intéressent pas, vous gardez l'audit et je ne vous relance pas."}}, {"@type": "Question", "name": "Quelle différence entre « Je vous guide » et « Je m'en occupe » ?", "acceptedAnswer": {"@type": "Answer", "text": "Avec « Je vous guide » (29 € par mois), vous faites les corrections vous-même, avec mon pas-à-pas et les textes déjà rédigés. Avec « Je m'en occupe » (79 € par mois), c'est moi qui les fais : je tiens votre fiche Google à jour, j'y publie 4 fois par mois et je réponds à vos nouveaux avis. Dans les deux cas, vous recevez le bulletin du mois."}}, {"@type": "Question", "name": "Que faites-vous exactement sur ma fiche Google ?", "acceptedAnswer": {"@type": "Answer", "text": "Je mets à jour les horaires (jours fériés et congés compris), la description, les prestations et les prix. Je publie 4 actualités par mois (plat ou soin du moment, nouveauté, événement) et je réponds à chaque nouvel avis, sur votre ton. Chaque mois, je vous dis quelles photos prendre ; vous me les envoyez et je les ajoute."}}, {"@type": "Question", "name": "Faut-il vous donner un mot de passe ?", "acceptedAnswer": {"@type": "Answer", "text": "Non, jamais. Pour « Je m'en occupe », vous m'ajoutez comme gestionnaire de votre fiche Google depuis votre compte, en deux minutes : je vous envoie le pas-à-pas. Vous restez propriétaire de la fiche et vous pouvez me retirer en un clic."}}, {"@type": "Question", "name": "Allez-vous me faire recommander par ChatGPT ?", "acceptedAnswer": {"@type": "Answer", "text": "Personne ne peut le promettre, et je me méfierais de quelqu'un qui vous le promet. Je mesure chaque mois qui les IA conseillent dans votre quartier, et je travaille sur ce qui compte : des informations justes, complètes et à jour partout où elles vont les chercher. Le choix final appartient à l'IA."}}, {"@type": "Question", "name": "Publiez-vous des avis ?", "acceptedAnswer": {"@type": "Answer", "text": "Jamais de faux avis : c'est interdit, et Google les supprime. Je réponds aux vrais avis de vos clients, et je peux vous aider à en demander à vos clients contents."}}, {"@type": "Question", "name": "Ce que je vois sur mon téléphone peut-il être différent ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui. Une IA ne répond pas toujours la même chose : ça dépend du compte, du lieu, de la formulation et du jour. C'est pour ça que je pose chaque question plusieurs fois et que je ne retiens une erreur que si elle revient au moins deux fois sur trois. Je le rappelle dans chaque bulletin."}}, {"@type": "Question", "name": "Qu'est-ce que j'ai à faire de mon côté ?", "acceptedAnswer": {"@type": "Answer", "text": "Avec « Je vous guide » : appliquer les corrections du mois depuis vos comptes habituels (fiche Google, Planity ou Treatwell, TheFork, votre site), avec mon pas-à-pas. Avec « Je m'en occupe » : presque rien, à part prendre quelques photos et me prévenir de vos congés."}}, {"@type": "Question", "name": "Comment arrêter l'abonnement ?", "acceptedAnswer": {"@type": "Answer", "text": "Un e-mail suffit, à tout moment. L'arrêt prend effet à la fin de la période déjà payée : au mois pour les formules mensuelles, à l'année pour la formule annuelle. Pas de durée minimale."}}, {"@type": "Question", "name": "Comment se passe le paiement ?", "acceptedAnswer": {"@type": "Answer", "text": "Par carte, sur la page de paiement sécurisée de Stripe. Je ne vois jamais votre numéro de carte. Vous recevez une facture par e-mail."}}, {"@type": "Question", "name": "J'ai plusieurs établissements.", "acceptedAnswer": {"@type": "Answer", "text": "Chaque établissement a son propre bulletin. Au moment du paiement, vous choisissez le nombre d'établissements, jusqu'à 3."}}, {"@type": "Question", "name": "Que gardez-vous comme informations sur moi ?", "acceptedAnswer": {"@type": "Answer", "text": "Seulement des informations professionnelles publiques : le nom du commerce, l'adresse, le site, le téléphone et l'e-mail professionnels, et ce que les IA disent de vous. Sur simple demande, je supprime tout et je ne vous écris plus."}}]}]}</script>
 </head>
 <body>
 <a class="skip" href="#contenu">Aller au contenu</a>
 <div class="w">
   <header class="top">
     <a class="plaque" href="#contenu" aria-label="Bulletin IA, retour en haut"><small>Paris · chaque mois</small><b>Bulletin IA</b></a>
-    <nav aria-label="Navigation principale"><a class="opt" href="#exemple" data-track="nav_exemple">Un exemple</a><a class="opt" href="#prix">Prix</a><a class="opt" href="#questions">Questions</a><a class="navcta" href="#audit" data-track="audit_nav">Audit gratuit</a></nav>
+    <nav aria-label="Navigation principale"><a class="opt" href="#exemple" data-track="nav_exemple">Un exemple</a><a class="opt" href="#prix">Formules</a><a class="opt" href="#questions">Questions</a><a class="navcta" href="#audit" data-track="audit_nav">Audit gratuit</a></nav>
   </header>
 
 <main id="contenu">
   <section class="hero" aria-labelledby="titre">
-    <h1 id="titre">ChatGPT donne‑t‑il les bonnes informations sur votre commerce&nbsp;?</h1>
-    <p class="lead">Je vérifie ce que ChatGPT, Gemini, Claude et Perplexity disent de vous, et je vous indique exactement quoi corriger quand une information est fausse.</p>
+    <h1 id="titre">ChatGPT conseille‑t‑il votre commerce, ou celui d'à côté&nbsp;?</h1>
+    <p class="lead">Je pose à ChatGPT, Gemini, Claude et Perplexity les questions de vos clients&nbsp;: «&nbsp;un bon italien dans le 11e&nbsp;», «&nbsp;un coiffeur ouvert lundi&nbsp;». Je vous montre qui elles conseillent, ce qu'elles disent de vous et ce qui est faux. Ensuite, vous corrigez avec mon pas-à-pas, ou je m'en occupe pour vous.</p>
     <div class="ctarow"><div class="ctamain"><a class="btn p" href="#audit" data-track="audit_hero">Recevoir mon audit gratuit</a><p class="reass">Gratuit · sans carte bancaire · sans engagement</p></div><a class="btn s" href="#exemple" data-track="voir_exemple_hero">Voir un vrai bulletin</a></div>
   </section>
 
@@ -284,7 +294,7 @@ ol.et{margin:6px 0 0;padding-left:18px;font-size:14px;display:grid;gap:3px}
     <div class="proof">
       <div class="big"><small class="pre">Près de</small>8 sur 10<small>commerces testés avaient un problème</small></div>
       <div>
-        <p><b>Début octobre 2026, j'ai testé 30 commerces indépendants parisiens.</b> Pour 23 d'entre eux, une IA donnait de fausses informations (des horaires faux, répétés quand on reposait la question) ou ne les recommandait pas du tout dans leur quartier.</p>
+        <p><b>Début octobre 2026, j'ai testé 30 commerces indépendants parisiens.</b> 20 n'étaient conseillés par aucune des quatre IA quand on demandait les meilleures adresses près de leur métro. 10 avaient des horaires faux, répétés quand on reposait la question.</p>
         <div class="quote"><b>Perplexity, à propos d'un institut du 19e fermé le lundi</b>« Lundi 12/10 : oui, 10h–19h30 »</div>
         <p class="note">Restaurants, salons et instituts parisiens, testés un par un. C'est un petit échantillon, pas une statistique nationale.</p>
       </div>
@@ -292,14 +302,14 @@ ol.et{margin:6px 0 0;padding-left:18px;font-size:14px;display:grid;gap:3px}
   </section>
 
   <section class="sec" aria-labelledby="verifie">
-    <div class="t"><p class="kick">Ce que je vérifie</p><h2 id="verifie">Les questions que vos clients posent vraiment</h2>
+    <div class="t"><p class="kick">Ce que je regarde</p><h2 id="verifie">Les questions que vos clients posent vraiment</h2>
     <p>Pour chacune des quatre IA, je regarde&nbsp;:</p></div>
     <ul class="checks">
+      <li><div><b>Qui elle conseille près de chez vous</b><span>quand on demande « le meilleur italien du 11e ». Et si ce n'est pas vous, qui est cité à votre place.</span></div></li>
       <li><div><b>Si elle vous connaît</b><span>ou si elle répond qu'elle ne trouve pas votre commerce.</span></div></li>
       <li><div><b>Votre adresse</b><span>la bonne, et pas celle d'un ancien local ou d'un homonyme.</span></div></li>
       <li><div><b>Votre téléphone</b><span>le numéro que vos clients doivent appeler.</span></div></li>
       <li><div><b>Vos horaires, jour par jour</b><span>« Est-ce ouvert lundi ? » « Jusqu'à quelle heure ? »</span></div></li>
-      <li><div><b>Si elle vous cite dans le quartier</b><span>quand on demande « un bon institut près du métro Pyrénées ».</span></div></li>
     </ul>
   </section>
 
@@ -372,26 +382,45 @@ ol.et{margin:6px 0 0;padding-left:18px;font-size:14px;display:grid;gap:3px}
   </section>
 
   <section class="sec" aria-labelledby="probs">
-    <div class="t"><p class="kick">Pourquoi c'est important</p><h2 id="probs">Une information fausse, c'est un client perdu</h2>
+    <div class="t"><p class="kick">Pourquoi c'est important</p><h2 id="probs">Chaque réponse de l'IA envoie un client quelque part</h2>
     <p>De plus en plus de gens demandent directement à une IA où aller, au lieu de chercher sur Google. Voici ce que j'ai vu en octobre&nbsp;:</p></div>
     <div class="probs">
+      <div class="prob"><h3>Le voisin cité à votre place</h3><p>On demande un bon institut dans le quartier. L'IA en cite quatre, pas vous.</p></div>
       <div class="prob"><h3>Ouvert annoncé, porte close</h3><p>L'IA dit que vous êtes ouvert le lundi. Vous êtes fermé. La cliente se déplace pour rien.</p></div>
       <div class="prob"><h3>La mauvaise heure de fermeture</h3><p>L'IA annonce 19h30 au lieu de 19h. Le client arrive à 19h15&nbsp;: rideau baissé.</p></div>
-      <div class="prob"><h3>Le voisin cité à votre place</h3><p>On demande un bon institut dans le quartier. L'IA en cite quatre, pas vous.</p></div>
       <div class="prob"><h3>Des fiches qui se contredisent</h3><p>Votre site dit une chose, une plateforme de réservation une autre. L'IA choisit, parfois la mauvaise.</p></div>
     </div>
     <p class="strong">Une mauvaise réponse de ChatGPT peut suffire à envoyer un client chez le voisin.</p>
   </section>
 
   <section class="sec" id="corriger" aria-labelledby="recevez">
-    <div class="t"><p class="kick">Chaque mois</p><h2 id="recevez">Ce que vous recevez</h2>
-    <p><b>Chaque mois, vos informations deviennent plus justes et plus complètes.</b></p>
-    <ul class="plain">
-      <li>le pas-à-pas de chaque correction, avec les textes déjà rédigés pour vous, à copier-coller&nbsp;;</li>
-      <li>une amélioration de vos fiches&nbsp;: description, prestations et prix, questions fréquentes, photos, réponses aux avis&nbsp;;</li>
-      <li>le résultat&nbsp;: ce que disent les 4 IA, avant et après.</li>
-    </ul>
-    <p>Chaque correction est expliquée pas à pas. La plupart se font en quelques minutes depuis votre téléphone&nbsp;:</p></div>
+    <div class="t"><p class="kick">Chaque mois</p><h2 id="recevez">Vous corrigez, ou je m'en occupe</h2>
+    <p><b>Chaque mois, vos informations deviennent plus justes et plus complètes, et vous voyez le résultat.</b> Deux façons d'y arriver&nbsp;:</p></div>
+    <div class="offers">
+      <div class="offer">
+        <p class="oname">Je vous guide <span>29&nbsp;€ / mois</span></p>
+        <ul>
+          <li>Votre bulletin du mois&nbsp;: ce que disent les quatre IA, qui elles conseillent à votre place, ce qui a changé.</li>
+          <li>Chaque correction pas à pas, avec les textes déjà rédigés pour vous, à copier-coller.</li>
+          <li>Une amélioration de vos fiches chaque mois&nbsp;: description, prestations et prix, photos, réponses aux avis.</li>
+        </ul>
+        <p class="ofoot">Vous faites les changements vous-même, en quelques minutes depuis votre téléphone.</p>
+      </div>
+      <div class="offer top">
+        <p class="badge">Le plus simple pour vous</p>
+        <p class="oname">Je m'en occupe <span>79&nbsp;€ / mois</span></p>
+        <ul>
+          <li>Votre fiche Google tenue à jour&nbsp;: horaires, jours fériés et congés, description, prestations et prix.</li>
+          <li>4 publications par mois sur votre fiche Google&nbsp;: plat ou soin du moment, nouveauté, événement.</li>
+          <li>Une réponse à chaque nouvel avis Google, sur votre ton.</li>
+          <li>Les photos à prendre ce mois-ci&nbsp;: vous me les envoyez, je les ajoute.</li>
+          <li>Votre bulletin du mois, avec ce qui a changé.</li>
+        </ul>
+        <p class="ofoot">Vous m'ajoutez comme gestionnaire de votre fiche Google, sans mot de passe. Vous pouvez me retirer en un clic.</p>
+      </div>
+    </div>
+    <p class="t" style="margin-top:18px">Pourquoi la fiche Google&nbsp;? C'est ce que vos clients voient en premier sur Google et Google&nbsp;Maps, et une source que lit Gemini, l'IA de Google. Une fiche juste, complète et vivante sert partout.</p>
+    <p class="t" style="margin-top:26px">Avec «&nbsp;Je vous guide&nbsp;», chaque correction est expliquée pas à pas. La plupart se font en quelques minutes depuis votre téléphone&nbsp;:</p>
     <div class="steps">
       <div class="step">
         <div class="where">Fiche Google</div>
@@ -415,32 +444,33 @@ ol.et{margin:6px 0 0;padding-left:18px;font-size:14px;display:grid;gap:3px}
   <section class="sec" aria-labelledby="comment">
     <h2 id="comment">Comment ça marche</h2>
     <ol class="how">
-      <li><b>L'audit gratuit</b><span>Vous m'indiquez votre commerce. J'interroge les quatre IA et je vous envoie le résultat complet par e-mail.</span></li>
-      <li><b>Vous voyez ce qu'elles disent</b><span>Ce qui est juste, ce qui est faux, et quoi corriger. Vous pouvez tout faire seul.</span></li>
-      <li><b>Si c'est utile, on le fait ensemble</b><span>Chaque mois, je vous prépare les corrections et améliorations avec les textes déjà rédigés, et je vous montre le résultat&nbsp;: ce que disent les IA avant et après.</span></li>
+      <li><b>L'audit gratuit</b><span>Vous m'indiquez votre commerce. Je pose les questions de vos clients aux IA et je vous envoie le résultat par e-mail&nbsp;: qui elles conseillent, ce qu'elles disent de vous, ce qui est faux et où le corriger.</span></li>
+      <li><b>Vous choisissez</b><span>Vous pouvez tout faire seul avec l'audit. Si vous voulez aller plus loin&nbsp;: je vous guide chaque mois, ou je m'en occupe pour vous.</span></li>
+      <li><b>Chaque mois, le résultat</b><span>Ce que disent les IA avant et après, et qui elles conseillent dans votre quartier.</span></li>
     </ol>
   </section>
 
   <section class="sec" id="prix" aria-labelledby="prix-titre">
-    <h2 id="prix-titre">Prix</h2>
-    <p class="free"><b>L'audit est gratuit.</b> Vous ne payez rien pour savoir ce que les IA disent de vous. L'abonnement ne vient qu'après, si vous voulez qu'on avance ensemble chaque mois.</p>
+    <h2 id="prix-titre">Formules et prix</h2>
+    <p class="free"><b>L'audit est gratuit.</b> Vous ne payez rien pour savoir ce que les IA disent de vous et qui elles conseillent. Une formule ne vient qu'après, si vous voulez avancer chaque mois.</p>
     <div class="prices">
       <div class="price">
-        <h3>Au mois</h3>
+        <h3>Je vous guide</h3>
         <div class="amt">29&nbsp;€<small> / mois</small></div>
-        <p>Par établissement. Sans engagement&nbsp;: vous arrêtez quand vous voulez, d'un simple e-mail.</p>
+        <p>Vous faites les corrections, avec mon pas-à-pas et les textes déjà rédigés. Le bulletin chaque mois.</p>
         <a class="btn q" href="https://buy.stripe.com/fZu4gB0KB3ow2JXfL63Ru00" rel="noopener" data-track="stripe_mensuel">Commencer au mois</a>
-      </div>
-      <div class="price">
-        <h3>À l'année</h3>
-        <div class="amt">290&nbsp;€<small> / an</small></div>
-        <p>Par établissement. Deux mois offerts par rapport au mensuel (348&nbsp;€).</p>
-        <p><b>En plus&nbsp;:</b> un appel de 15&nbsp;minutes pour tout mettre en place ensemble.</p>
+        <p class="alt">Ou <b>290&nbsp;€ par an</b>&nbsp;: deux mois offerts, et un appel de 15&nbsp;minutes pour tout mettre en place ensemble.</p>
         <a class="btn q" href="https://buy.stripe.com/5kQ4gB9h77EMacpcyU3Ru01" rel="noopener" data-track="stripe_annuel">Commencer à l'année</a>
       </div>
+      <div class="price top">
+        <h3>Je m'en occupe</h3>
+        <div class="amt">79&nbsp;€<small> / mois</small></div>
+        <p>Je fais tout pour vous&nbsp;: fiche Google à jour, 4 publications par mois, une réponse à chaque nouvel avis, et le bulletin chaque mois.</p>
+        <a class="btn q" href="https://buy.stripe.com/fZudRbctjcZ6fwJ8iE3Ru02" rel="noopener" data-track="stripe_occupe">Commencer</a>
+      </div>
     </div>
-    <p class="note t" style="margin-top:12px">Prix TTC, jusqu'à 3 établissements. Paiement par carte sur la page sécurisée de Stripe&nbsp;; je ne vois jamais votre numéro de carte.</p>
-    <div class="promise"><p><b>Ce que je ne vous promets pas&nbsp;:</b> que ChatGPT vous recommandera. Personne ne décide de ce que répondent les IA. Je vérifie ce qu'elles disent réellement de vous, et je vous indique quoi corriger quand une information est fausse.</p></div>
+    <p class="note t" style="margin-top:12px">Prix TTC, par établissement, jusqu'à 3. Sans engagement&nbsp;: vous arrêtez quand vous voulez, d'un simple e-mail. Paiement par carte sur la page sécurisée de Stripe&nbsp;; je ne vois jamais votre numéro de carte.</p>
+    <div class="promise"><p><b>Ce que je ne vous promets pas&nbsp;:</b> que ChatGPT vous conseillera. Personne ne décide de ce que répondent les IA. Je mesure ce qu'elles disent vraiment de vous et qui elles conseillent, je fais corriger ce qui est faux, et vos fiches deviennent plus complètes chaque mois.</p></div>
     <div class="ctablock"><a class="btn p" href="#audit" data-track="audit_prix">Recevoir mon audit gratuit</a><p class="reass">Commencez par l'audit&nbsp;: gratuit, sans carte bancaire.</p></div>
   </section>
 
@@ -448,25 +478,29 @@ ol.et{margin:6px 0 0;padding-left:18px;font-size:14px;display:grid;gap:3px}
     <div class="who"><img src="photo-alexandre.jpg" width="112" height="112" loading="lazy" decoding="async" alt="Alexandre, qui fait les bulletins"><div><h2 id="qui">Qui est derrière</h2><span>Alexandre, Paris</span></div></div>
     <p>Je m'appelle Alexandre, j'habite Paris. Autour de moi, de plus en plus de gens ne cherchent plus un restaurant ou un coiffeur sur Google&nbsp;: ils le demandent à ChatGPT.</p>
     <p>Alors j'ai posé ces questions sur 30 commerces de quartier. Les erreurs n'étaient pas rares, et les commerçants concernés n'en savaient rien.</p>
-    <p>Les outils qui surveillent ce que disent les IA existent, mais ils sont faits pour les grandes marques. Bulletin IA, c'est la même chose en simple, pour les commerces indépendants. Je fais chaque relevé moi-même et je réponds moi-même à vos e-mails.</p>
+    <p>Les outils qui surveillent ce que disent les IA existent, mais ils sont faits pour les grandes marques. Bulletin IA, c'est la même chose en simple, pour les commerces indépendants. Je fais chaque relevé moi-même, je réponds moi-même à vos e-mails, et si vous le voulez, je m'occupe moi-même de votre fiche Google.</p>
     <p class="signed">Alexandre</p>
   </section>
 
   <section class="sec" aria-labelledby="methode">
     <h2 id="methode">Méthode et transparence</h2>
     <ul class="meth">
-      <li>Je pose les questions qu'un client poserait&nbsp;: horaires, ouvert tel jour, adresse, téléphone, meilleures adresses du quartier.</li>
-      <li>Je pose chaque question plusieurs fois. Une erreur n'est retenue que si la même IA la répète au moins 2 fois sur 3.</li>
-      <li>Je compare à une source fiable et récente, en général votre site, relevée le même jour. La date de chaque relevé est indiquée.</li>
+      <li>Je pose les questions qu'un client poserait&nbsp;: les meilleures adresses du quartier, les horaires, ouvert tel jour, l'adresse, le téléphone.</li>
+      <li>Pour savoir qui une IA conseille, je lui pose la question d'un client («&nbsp;les meilleurs restaurants italiens du 11e&nbsp;») trois fois, sans citer votre nom, et je note qui revient.</li>
+      <li>Une erreur n'est retenue que si la même IA la répète au moins 2 fois sur 3, et qu'elle contredit une source fiable et récente, en général votre site, relevée le même jour. La date de chaque relevé est indiquée.</li>
       <li>Les réponses brutes sont conservées et vous sont envoyées sur demande.</li>
       <li>Une IA ne répond pas toujours la même chose&nbsp;: ce que vous voyez sur votre téléphone peut différer.</li>
-      <li>Je ne promets aucun classement et je ne vous demande aucun mot de passe. Je ne touche jamais à vos comptes.</li>
+      <li>Je ne promets aucun classement. Je ne vous demande jamais de mot de passe&nbsp;: avec «&nbsp;Je m'en occupe&nbsp;», vous m'ajoutez comme gestionnaire de votre fiche Google, et vous pouvez me retirer en un clic.</li>
+      <li>Je n'achète, n'écris ni ne publie jamais de faux avis.</li>
     </ul>
   </section>
 
   <section class="sec" id="ressources" aria-labelledby="ress-titre">
     <h2 id="ress-titre">À lire</h2>
     <ul class="plain t">
+      <li><a href="https://bulletin-ia.fr/restaurants/">Restaurants&nbsp;: ChatGPT vous conseille-t-il&nbsp;?</a></li>
+      <li><a href="https://bulletin-ia.fr/coiffeurs/">Coiffeurs&nbsp;: ChatGPT vous conseille-t-il&nbsp;?</a></li>
+      <li><a href="https://bulletin-ia.fr/instituts-de-beaute/">Instituts de beauté&nbsp;: ChatGPT vous conseille-t-il&nbsp;?</a></li>
       <li><a href="https://bulletin-ia.fr/etude-ia-commerces-paris/">Étude&nbsp;: ce que les IA disent de 30 commerces parisiens</a>, chiffres et méthode.</li>
       <li><a href="https://bulletin-ia.fr/chatgpt-mauvais-horaires/">ChatGPT donne de mauvais horaires pour mon commerce&nbsp;: que faire&nbsp;?</a></li>
       <li><a href="https://bulletin-ia.fr/apparaitre-dans-chatgpt/">Comment faire apparaître son commerce dans ChatGPT&nbsp;?</a></li>
@@ -476,11 +510,15 @@ ol.et{margin:6px 0 0;padding-left:18px;font-size:14px;display:grid;gap:3px}
   <section class="sec" id="questions" aria-labelledby="faq-titre">
     <h2 id="faq-titre">Vos questions</h2>
     <div class="faq">
-      <details><summary>L&#x27;audit est-il vraiment gratuit ?</summary><p>Oui. Pas de carte bancaire, pas d&#x27;engagement. Vous recevez le résultat complet par e-mail. Si la formule mensuelle ne vous intéresse pas, vous gardez l&#x27;audit et je ne vous relance pas.</p></details>
+      <details><summary>L&#x27;audit est-il vraiment gratuit ?</summary><p>Oui. Pas de carte bancaire, pas d&#x27;engagement. Vous recevez le résultat par e-mail. Si les formules ne vous intéressent pas, vous gardez l&#x27;audit et je ne vous relance pas.</p></details>
+      <details><summary>Quelle différence entre « Je vous guide » et « Je m&#x27;en occupe » ?</summary><p>Avec « Je vous guide » (29 € par mois), vous faites les corrections vous-même, avec mon pas-à-pas et les textes déjà rédigés. Avec « Je m&#x27;en occupe » (79 € par mois), c&#x27;est moi qui les fais : je tiens votre fiche Google à jour, j&#x27;y publie 4 fois par mois et je réponds à vos nouveaux avis. Dans les deux cas, vous recevez le bulletin du mois.</p></details>
+      <details><summary>Que faites-vous exactement sur ma fiche Google ?</summary><p>Je mets à jour les horaires (jours fériés et congés compris), la description, les prestations et les prix. Je publie 4 actualités par mois (plat ou soin du moment, nouveauté, événement) et je réponds à chaque nouvel avis, sur votre ton. Chaque mois, je vous dis quelles photos prendre ; vous me les envoyez et je les ajoute.</p></details>
+      <details><summary>Faut-il vous donner un mot de passe ?</summary><p>Non, jamais. Pour « Je m&#x27;en occupe », vous m&#x27;ajoutez comme gestionnaire de votre fiche Google depuis votre compte, en deux minutes : je vous envoie le pas-à-pas. Vous restez propriétaire de la fiche et vous pouvez me retirer en un clic.</p></details>
+      <details><summary>Allez-vous me faire recommander par ChatGPT ?</summary><p>Personne ne peut le promettre, et je me méfierais de quelqu&#x27;un qui vous le promet. Je mesure chaque mois qui les IA conseillent dans votre quartier, et je travaille sur ce qui compte : des informations justes, complètes et à jour partout où elles vont les chercher. Le choix final appartient à l&#x27;IA.</p></details>
+      <details><summary>Publiez-vous des avis ?</summary><p>Jamais de faux avis : c&#x27;est interdit, et Google les supprime. Je réponds aux vrais avis de vos clients, et je peux vous aider à en demander à vos clients contents.</p></details>
       <details><summary>Ce que je vois sur mon téléphone peut-il être différent ?</summary><p>Oui. Une IA ne répond pas toujours la même chose : ça dépend du compte, du lieu, de la formulation et du jour. C&#x27;est pour ça que je pose chaque question plusieurs fois et que je ne retiens une erreur que si elle revient au moins deux fois sur trois. Je le rappelle dans chaque bulletin.</p></details>
-      <details><summary>Allez-vous me faire recommander par ChatGPT ?</summary><p>Non, et je me méfierais de quelqu&#x27;un qui vous le promet. Des informations justes et cohérentes partout sont la base, mais le choix final appartient à l&#x27;IA.</p></details>
-      <details><summary>Qu&#x27;est-ce que j&#x27;ai à faire de mon côté ?</summary><p>Appliquer les corrections du mois depuis vos comptes habituels : fiche Google, PagesJaunes, Planity ou Treatwell, votre site. Je vous dis exactement où et quoi changer. Je ne vous demande aucun mot de passe.</p></details>
-      <details><summary>Comment arrêter l&#x27;abonnement ?</summary><p>Un e-mail suffit, à tout moment. L&#x27;arrêt prend effet à la fin de la période déjà payée : au mois pour la formule mensuelle, à l&#x27;année pour la formule annuelle. Pas de durée minimale.</p></details>
+      <details><summary>Qu&#x27;est-ce que j&#x27;ai à faire de mon côté ?</summary><p>Avec « Je vous guide » : appliquer les corrections du mois depuis vos comptes habituels (fiche Google, Planity ou Treatwell, TheFork, votre site), avec mon pas-à-pas. Avec « Je m&#x27;en occupe » : presque rien, à part prendre quelques photos et me prévenir de vos congés.</p></details>
+      <details><summary>Comment arrêter l&#x27;abonnement ?</summary><p>Un e-mail suffit, à tout moment. L&#x27;arrêt prend effet à la fin de la période déjà payée : au mois pour les formules mensuelles, à l&#x27;année pour la formule annuelle. Pas de durée minimale.</p></details>
       <details><summary>Comment se passe le paiement ?</summary><p>Par carte, sur la page de paiement sécurisée de Stripe. Je ne vois jamais votre numéro de carte. Vous recevez une facture par e-mail.</p></details>
       <details><summary>J&#x27;ai plusieurs établissements.</summary><p>Chaque établissement a son propre bulletin. Au moment du paiement, vous choisissez le nombre d&#x27;établissements, jusqu&#x27;à 3.</p></details>
       <details><summary>Que gardez-vous comme informations sur moi ?</summary><p>Seulement des informations professionnelles publiques : le nom du commerce, l&#x27;adresse, le site, le téléphone et l&#x27;e-mail professionnels, et ce que les IA disent de vous. Sur simple demande, je supprime tout et je ne vous écris plus.</p></details>
@@ -492,14 +530,17 @@ ol.et{margin:6px 0 0;padding-left:18px;font-size:14px;display:grid;gap:3px}
       <h2 id="audit-titre">Recevoir mon audit gratuit</h2>
       <p>Vous recevez par e-mail&nbsp;:</p>
       <ul class="plain">
-        <li>ce que ChatGPT, Gemini, Perplexity et Claude disent de votre commerce&nbsp;;</li>
-        <li>les erreurs trouvées, avec la phrase exacte de l'IA&nbsp;;</li>
+        <li>qui l'IA conseille quand on cherche un commerce comme le vôtre dans votre quartier&nbsp;;</li>
+        <li>ce qu'elle dit de vous, et les erreurs trouvées, avec sa phrase exacte&nbsp;;</li>
         <li>ce qu'il faut corriger, et où (Google, Planity, votre site…).</li>
       </ul>
+      <p class="note">L'audit gratuit interroge Claude et Gemini. ChatGPT et Perplexity s'y ajoutent chaque mois avec les formules.</p>
       <form id="audit-form" novalidate data-endpoint="formsubmit:589f7b060f78c7768cffe88db98467a3">
         <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
         <div class="field"><label for="f-nom">Nom du commerce</label>
           <input id="f-nom" name="commerce" autocomplete="organization" required aria-describedby="e-nom"><span class="err-msg" id="e-nom"></span></div>
+        <div class="field"><label for="f-activite">Votre activité <small>(facultatif, ex.&nbsp;: restaurant italien, coiffeur, onglerie)</small></label>
+          <input id="f-activite" name="activite"></div>
         <div class="field"><label for="f-ville">Ville ou arrondissement <small>(ex.&nbsp;: Paris 11e)</small></label>
           <input id="f-ville" name="ville" autocomplete="address-level2" required aria-describedby="e-ville"><span class="err-msg" id="e-ville"></span></div>
         <div class="field"><label for="f-site">Site web ou adresse <small>(facultatif)</small></label>
@@ -589,10 +630,10 @@ ol.et{margin:6px 0 0;padding-left:18px;font-size:14px;display:grid;gap:3px}
       check("f-ville","e-ville",function(v){return v.length>1},"Indiquez la ville ou l'arrondissement."),
       check("f-mail","e-mail",function(v){return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)},"Vérifiez votre adresse e-mail.")].filter(Boolean);
     if(bad.length){bad[0].focus();return}
-    var nom=form.commerce.value.trim(),ville=form.ville.value.trim(),site=form.site.value.trim(),mail=form.email.value.trim();
+    var nom=form.commerce.value.trim(),act=form.activite.value.trim(),ville=form.ville.value.trim(),site=form.site.value.trim(),mail=form.email.value.trim();
     var subject="Audit gratuit : "+nom+" ("+ville+")";
     var body="Bonjour Alexandre,\n\nJe souhaite recevoir l'audit gratuit de ce que disent les IA sur mon commerce.\n\n"+
-      "Commerce : "+nom+"\nVille ou arrondissement : "+ville+(site?"\nSite ou adresse : "+site:"")+"\nE-mail : "+mail+"\n\nMerci,\n";
+      "Commerce : "+nom+(act?"\nActivité : "+act:"")+"\nVille ou arrondissement : "+ville+(site?"\nSite ou adresse : "+site:"")+"\nE-mail : "+mail+"\n\nMerci,\n";
     msg.value="À : "+addr+"\nObjet : "+subject+"\n\n"+body;
     var es=encodeURIComponent(subject),eb=encodeURIComponent(body),ea=encodeURIComponent(addr);
     document.getElementById("open-gmail").href="https://mail.google.com/mail/?view=cm&fs=1&to="+ea+"&su="+es+"&body="+eb;
