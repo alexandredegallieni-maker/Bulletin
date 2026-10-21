@@ -160,6 +160,17 @@ border-radius:6px;text-decoration:none;border:2px solid var(--plaque);text-align
 .who h3{margin:0}
 .who span{font-size:14px;color:var(--accent);font-weight:700;letter-spacing:.04em}
 .team ul{margin:12px 0 0;padding-left:18px;font-size:15px;color:var(--muted)}
+/* Duo */
+.duo{display:grid;gap:22px}
+@media (min-width:860px){.duo{grid-template-columns:.9fr 1.1fr;gap:40px;align-items:start}}
+.duo figure{margin:0}
+.duo img{width:100%;height:auto;display:block;border-radius:16px;box-shadow:0 18px 40px -24px rgba(20,33,58,.45)}
+.bios{display:grid;gap:0}
+.bio{padding-block:4px 20px}
+.bio+.bio{border-top:1px solid var(--line);padding-top:22px}
+.bio h3{font-size:28px;margin:0 0 4px}
+.bio span{display:block;font:700 13px/1.3 var(--sans);letter-spacing:.08em;color:var(--accent);margin-bottom:12px}
+.bio p{color:var(--muted);margin:0 0 10px}
 /* Engagements */
 .eng{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr))}
 .eng div{padding:18px 0 0;border-top:1px solid var(--line)}
@@ -232,7 +243,7 @@ footer{padding-block:28px 40px;font:14px/1.6 var(--sans);color:var(--muted)}
   <div class="strip">
     <div class="w">
       <p>Nos parcours : là où nous avons piloté, décidé, transformé</p>
-      <ul class="logos"><li>Hermès</li><li>Bpifrance</li><li>Prisma Media</li><li>PwC</li><li>June Partners</li><li>Groupe Bel</li><li>Mikkeller</li><li>Station F</li></ul>
+      <ul class="logos"><li>Hermès</li><li>Bpifrance</li><li>Prisma Media</li><li>PwC</li><li>June Partners</li><li>Groupe Bel</li><li>Unilabs</li><li>Mikkeller</li><li>Station F</li></ul>
     </div>
   </div>
 
@@ -242,7 +253,7 @@ footer{padding-block:28px 40px;font:14px/1.6 var(--sans);color:var(--muted)}
         <div class="fig"><b>20 ans</b><span>d'expérience cumulée en finance, stratégie et fusions-acquisitions</span></div>
         <div class="fig"><b>66 M€</b><span>de budget digital piloté au quotidien</span></div>
         <div class="fig"><b>17 filiales</b><span>consolidées en contrôle financier, pour 250 M€ de chiffre d'affaires</span></div>
-        <div class="fig"><b>2</b><span>entreprises fondées et dirigées : nous connaissons les contraintes du terrain</span></div>
+        <div class="fig"><b>+10</b><span>opérations d'acquisition et de développement pilotées</span></div>
       </div>
       <p class="note">Ces chiffres et les noms ci-dessus viennent des parcours de nos associés. Ce ne sont pas des références de missions d'IA.</p>
     </div>
@@ -335,15 +346,18 @@ footer{padding-block:28px 40px;font:14px/1.6 var(--sans);color:var(--muted)}
     </section>
 
     <section class="sec" id="equipe" aria-labelledby="equipe-titre">
-      <div class="head2"><div><p class="kick">Qui sommes-nous</p><h2 id="equipe-titre">Deux associés, à la croisée du business, de la finance et de l'IA</h2></div>
+      <div class="head2"><div><p class="kick">Le duo</p><h2 id="equipe-titre">Deux entrepreneurs, à la croisée du business, de la finance et de l'IA</h2></div>
       <p class="lead">Nous avons tenu les budgets, les clôtures et les comités que nous proposons d'alléger. Nous savons ce qu'une équipe peut absorber.</p></div>
-      <div class="team">
-        <div class="card"><div class="who"><div class="ini" aria-hidden="true">M</div><div><h3>Marie</h3><span>FINANCE &amp; OPÉRATIONS</span></div></div>
-          <p>Pilotage financier, structuration et automatisation des processus, refonte d'outils de contrôle de gestion, conduite du changement.</p>
-          <ul><li>Responsable contrôle financier chez Hermès Cuirs Précieux</li><li>Pilotage du budget Digital de Bpifrance</li><li>Fondatrice et dirigeante de Mikkeller Bar Paris</li></ul></div>
-        <div class="card"><div class="who"><div class="ini" aria-hidden="true">A</div><div><h3>Aloïs</h3><span>STRATÉGIE &amp; DÉVELOPPEMENT</span></div></div>
-          <p>Vision business et analyse économique, priorisation des projets, création de valeur.</p>
-          <ul><li>Fusions-acquisitions et stratégie, puis direction d'une business unit chez Prisma Media</li><li>Conseil en corporate finance chez June Partners</li><li>Fondateur d'une start-up incubée à Station F</li></ul></div>
+      <div class="duo">
+        <figure><img src="duo.jpg" width="605" height="588" loading="lazy" decoding="async" alt="Aloïs et Marie, les deux associés"></figure>
+        <div class="bios">
+          <div class="bio"><h3>Marie</h3><span>ENTREPRENEURE · FINANCE · OPÉRATIONS</span>
+            <p>Diplômée de Paris-Dauphine, fondatrice de Mikkeller Bar Paris : elle en a piloté le financement, l'ouverture et la structuration. L'activité réalise aujourd'hui environ 500 k€ de chiffre d'affaires, avec une gestion déléguée.</p>
+            <p>Elle a aussi accompagné Hermès, Unilabs, Aurore Market et Save sur des enjeux de finance et de transformation, et pilote le budget Digital de Bpifrance (66 M€).</p></div>
+          <div class="bio"><h3>Aloïs</h3><span>DIRIGEANT · STRATÉGIE · DÉVELOPPEMENT</span>
+            <p>Diplômé de l'EDHEC, entrepreneur puis dirigeant chez Prisma Media, où il a d'abord dirigé les activités M&amp;A et Stratégie du groupe. Membre du COMEX, il y a piloté plus de 10 opérations d'acquisition et de développement.</p>
+            <p>Il dirige aujourd'hui une activité de 6 M€ de chiffre d'affaires, réunissant 40 marques et près de 50 collaborateurs.</p></div>
+        </div>
       </div>
       <p class="note" style="margin-top:18px">Nous formons aussi une équipe de consultants aux usages de l'IA, pour intervenir à leur tour chez nos clients. Vous êtes consultant indépendant et cela vous intéresse&nbsp;? <a href="#contact" data-prefill="consultant">Rejoignez-nous</a>.</p>
     </section>
