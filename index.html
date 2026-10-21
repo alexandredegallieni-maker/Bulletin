@@ -239,7 +239,7 @@ border-radius:999px;text-decoration:none;border:2px solid var(--bleu);text-align
 .final .lead{color:#C9D5EA}
 .final ul{margin:0 0 8px;padding:0;list-style:none;display:grid;gap:10px;font-weight:600}
 .final li::before{content:"✓";display:inline-grid;place-items:center;width:24px;height:24px;border-radius:50%;background:var(--rouge);margin-right:10px;font-size:13px;font-weight:800}
-.final .ico{width:84px;height:auto;margin-bottom:20px;border-radius:20px}
+.final .mini{display:block;width:min(100%,300px);height:auto;margin-bottom:22px;background:var(--ciel);border-radius:22px;padding:14px 16px 0}
 .final .kick{color:#E9A9B4}.final .kick::before{background:#E9A9B4}
 .contact{background:var(--blanc);color:var(--encre);border-radius:20px;padding:22px 18px}
 @media (min-width:600px){.contact{padding:30px}}
@@ -467,7 +467,7 @@ footer img{width:150px;height:auto;display:block}
     <div class="w">
       <div class="final rv">
         <div>
-          <img class="ico" src="icone.png" width="256" height="256" alt="">
+          <picture><source srcset="mini.webp" type="image/webp"><img class="mini" src="mini.png" width="720" height="424" loading="lazy" decoding="async" alt="Marie et Aloïs en dessin, qui vous saluent"></picture>
           <p class="kick">Premier échange</p>
           <h2 id="contact-titre">Parlons de votre projet.</h2>
           <p class="lead">Racontez-nous en quelques lignes votre organisation et ce qui vous prend du temps. Nous vous proposons un créneau sous deux jours ouvrés.</p>
