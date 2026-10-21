@@ -289,8 +289,8 @@ footer img{width:150px;height:auto;display:block}
         <p class="kick">Conseil métier, outillé par l'IA</p>
         <h1 id="titre">L'IA au travail dans votre <span class="rot" aria-hidden="true"><span class="on">finance.</span><span>commercial.</span><span>pilotage.</span><span>administratif.</span><span>RH.</span></span><span class="sr" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">organisation.</span></h1>
         <p class="lead">Reportings, relances, saisies, comptes rendus : l'IA peut en alléger une bonne partie. Nous repérons où, installons les bons outils et formons vos équipes, pour qu'elles gagnent du temps et se concentrent sur ce qui compte.</p>
-        <div class="ctarow"><a class="btn p" href="#contact" data-track="hero_rdv" data-prefill="rdv">Réserver 30 min offertes <span class="arr" aria-hidden="true">→</span></a><a class="btn s" href="#methode">Voir la méthode</a></div>
-        <ul class="reass"><li>Gratuit et sans engagement</li><li>3 pistes concrètes par écrit</li><li>Un associé en face de vous</li></ul>
+        <div class="ctarow"><a class="btn p" href="#contact" data-track="hero_rdv" data-prefill="rdv">Prendre rendez-vous <span class="arr" aria-hidden="true">→</span></a><a class="btn s" href="#methode">Voir la méthode</a></div>
+        <ul class="reass"><li>Un associé en face de vous</li><li>Un créneau proposé sous deux jours ouvrés</li></ul>
       </div>
       <div class="demo rv d2" aria-label="Exemple : un reporting mensuel préparé avec l'IA">
         <img class="mascot" src="icone.png" width="256" height="256" alt="" aria-hidden="true">
@@ -453,7 +453,7 @@ footer img{width:150px;height:auto;display:block}
     <div class="w">
       <h2 id="faq-titre" class="rv">Vos questions</h2>
       <div class="faq rv">
-        <details><summary>Comment se passe l'échange de 30 minutes ?</summary><p>En visio ou par téléphone. Vous nous décrivez votre organisation et les tâches qui prennent le plus de temps ; nous repartons avec trois pistes concrètes que nous vous envoyons par écrit. C'est gratuit et sans engagement.</p></details>
+        <details><summary>Comment se passe le premier rendez-vous ?</summary><p>En visio ou par téléphone, avec l'un de nous deux. Vous nous décrivez votre organisation, vos besoins et les tâches qui prennent le plus de temps ; nous voyons ensemble par où commencer.</p></details>
         <details><summary>Faut-il déjà avoir des outils d'IA ?</summary><p>Non. Le diagnostic recense ce que vous avez déjà (logiciels, licences, compétences) ; souvent, une partie des besoins se couvre avec l'existant.</p></details>
         <details><summary>Nos données restent-elles chez nous ?</summary><p>Les accès, les outils et les données utilisées sont définis avec votre DSI avant le pilote. Nous travaillons uniquement sur des données autorisées.</p></details>
         <details><summary>Combien de temps dure une première mission ?</summary><p>Elle commence par un diagnostic ciblé, puis un pilote sur un seul processus. La durée et le budget sont fixés ensemble après le diagnostic.</p></details>
@@ -469,9 +469,9 @@ footer img{width:150px;height:auto;display:block}
         <div>
           <img class="ico" src="icone.png" width="256" height="256" alt="">
           <p class="kick">Premier échange</p>
-          <h2 id="contact-titre">30 minutes pour trouver vos premiers gains.</h2>
+          <h2 id="contact-titre">Parlons de votre projet.</h2>
           <p class="lead">Racontez-nous en quelques lignes votre organisation et ce qui vous prend du temps. Nous vous proposons un créneau sous deux jours ouvrés.</p>
-          <ul><li>Gratuit et sans engagement</li><li>Trois pistes concrètes envoyées par écrit</li><li>Un associé en face de vous, pas un commercial</li></ul>
+          <ul><li>Un associé en face de vous, pas un commercial</li><li>Un créneau proposé sous deux jours ouvrés</li><li>En visio ou par téléphone</li></ul>
         </div>
         <div class="contact">
           <form id="contact-form" novalidate data-endpoint="formsubmit:589f7b060f78c7768cffe88db98467a3">
@@ -484,7 +484,7 @@ footer img{width:150px;height:auto;display:block}
               <input id="f-mail" name="email" type="email" autocomplete="email" inputmode="email" required aria-describedby="e-mail"><span class="err-msg" id="e-mail"></span></div>
             <div class="field"><label for="f-msg">Votre besoin</label>
               <textarea id="f-msg" name="message" required aria-describedby="e-msg" placeholder="Ex. : notre reporting mensuel prend 3 jours à l'équipe finance."></textarea><span class="err-msg" id="e-msg"></span></div>
-            <button class="btn p" type="submit" data-track="contact_envoi">Demander mon créneau <span class="arr" aria-hidden="true">→</span></button>
+            <button class="btn p" type="submit" data-track="contact_envoi">Prendre rendez-vous <span class="arr" aria-hidden="true">→</span></button>
           </form>
           <div class="done" id="contact-done" role="status" tabindex="-1"><p id="done-txt" style="margin:0"></p></div>
           <p class="mailrow">Ou par e-mail&nbsp;: <span class="mail" data-u="ineillag.ed.erdnaxela" data-d="moc.liamg">alexandre.de.gallieni [arobase] gmail [point] com</span> <button type="button" class="copy" id="copy-mail">Copier</button></p>
@@ -533,7 +533,7 @@ footer img{width:150px;height:auto;display:block}
   }else rv.forEach(function(el){el.classList.add("in")});
 
   // Les boutons de rendez-vous pré-remplissent le besoin
-  var pre={rdv:"Je souhaite un échange de 30 minutes. ",consultant:"Je suis consultant indépendant et je souhaite rejoindre votre équipe. "};
+  var pre={rdv:"Je souhaite prendre rendez-vous. ",consultant:"Je suis consultant indépendant et je souhaite rejoindre votre équipe. "};
   document.querySelectorAll("[data-prefill]").forEach(function(a){a.addEventListener("click",function(){
     var m=document.getElementById("f-msg");if(m&&!m.value)m.value=pre[a.getAttribute("data-prefill")]||"";
     setTimeout(function(){var f=document.getElementById("f-nom");if(f)f.focus({preventScroll:true})},500)})});
@@ -580,7 +580,7 @@ footer img{width:150px;height:auto;display:block}
         track("contact_envoye");
         txt.innerHTML="<b>Merci, c'est envoyé.</b> Nous vous proposons un créneau sous deux jours ouvrés.";
         form.hidden=true;box.classList.add("on");box.focus()}).catch(function(){
-        sb.disabled=false;sb.textContent="Demander mon créneau";openMail()});
+        sb.disabled=false;sb.textContent="Prendre rendez-vous";openMail()});
     }else{openMail()}
   });
 })();
