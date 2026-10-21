@@ -15,7 +15,7 @@
 <meta property="og:locale" content="fr_FR">
 <meta property="og:site_name" content="bulletin IA">
 <meta property="og:title" content="bulletin IA · L'IA qui fait gagner du temps à vos équipes">
-<meta property="og:description" content="Conseil en IA pour les organisations : audit, recommandation à la direction, déploiement sur un pilote mesuré, formation des équipes.">
+<meta property="og:description" content="Conseil en IA pour les organisations : diagnostic, recommandation, validation, déploiement sur un pilote mesuré, formation des équipes.">
 <meta property="og:url" content="https://bulletin-ia.fr/">
 <meta property="og:image" content="https://bulletin-ia.fr/og.png">
 <meta property="og:image:width" content="1200">
@@ -23,7 +23,7 @@
 <meta property="og:image:alt" content="bulletin IA, conseil en IA pour les organisations">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="bulletin IA · L'IA qui fait gagner du temps à vos équipes">
-<meta name="twitter:description" content="Audit, recommandation, déploiement sur un pilote mesuré, formation des équipes.">
+<meta name="twitter:description" content="Diagnostic, recommandation, validation, déploiement sur un pilote mesuré, formation des équipes.">
 <meta name="twitter:image" content="https://bulletin-ia.fr/og.png">
 <title>bulletin IA · Conseil en IA pour les organisations</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -141,13 +141,6 @@ border-radius:999px;text-decoration:none;border:2px solid var(--bleu);text-align
 .gain{background:var(--blanc);border-radius:20px;padding:28px;border:1px solid var(--line);position:relative;overflow:hidden}
 .gain .em{font:400 54px/1 var(--display);color:var(--rouge);display:block;margin-bottom:14px}
 .gain p{color:var(--muted);margin:0}
-/* Offre */
-.offer{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));counter-reset:o}
-.oc{position:relative;background:var(--blanc);border:1px solid var(--line);border-radius:20px;padding:26px 24px 24px;transition:transform .2s,box-shadow .2s,border-color .2s}
-.oc:hover{transform:translateY(-6px);box-shadow:0 30px 50px -30px rgba(44,62,92,.45);border-color:var(--bleu)}
-.oc .num{font:400 44px/1 var(--display);color:var(--bleu);display:block;margin-bottom:18px}
-.oc .tag{position:absolute;top:24px;right:22px;font:800 11px var(--sans);letter-spacing:.1em;color:var(--rouge);text-transform:uppercase}
-.oc p{color:var(--muted);margin:0;font-size:16px}
 /* Métiers × secteurs */
 .mx{display:grid;gap:26px}
 @media (min-width:900px){.mx{grid-template-columns:1fr 1fr;gap:40px}}
@@ -173,7 +166,9 @@ border-radius:999px;text-decoration:none;border:2px solid var(--bleu);text-align
 .flow::before{content:"";position:absolute;left:8%;right:8%;top:34px;height:4px;background:repeating-linear-gradient(90deg,var(--bleu) 0 14px,transparent 14px 24px);opacity:.25}}
 .flow li{position:relative;background:var(--blanc);border-radius:20px;padding:24px 22px 22px;display:flex;flex-direction:column;box-shadow:0 20px 40px -32px rgba(44,62,92,.5);transition:transform .2s}
 .flow li:hover{transform:translateY(-6px)}
-.flow .fn{width:48px;height:48px;border-radius:14px;background:var(--bleu);color:#fff;display:grid;place-items:center;font:400 24px/1 var(--display);margin-bottom:16px;position:relative;z-index:1;box-shadow:0 0 0 6px var(--ciel)}
+.flow .ft{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
+.flow .fi{width:30px;height:30px;fill:none;stroke:var(--rouge);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.flow .fn{width:48px;height:48px;border-radius:14px;background:var(--bleu);color:#fff;display:grid;place-items:center;font:400 24px/1 var(--display);position:relative;z-index:1;box-shadow:0 0 0 6px var(--ciel)}
 .flow li:last-child .fn{background:var(--rouge)}
 .flow h3{font-size:20px;margin-bottom:6px}
 .flow p{color:var(--muted);font-size:15px;margin:0 0 16px;flex:1}
@@ -199,13 +194,6 @@ border-radius:999px;text-decoration:none;border:2px solid var(--bleu);text-align
 .case dd{margin:4px 0 14px;font-size:15px}
 .case dd small{display:block;color:var(--muted);font-size:13.5px;margin-top:2px}
 .case dd small::before{content:"On mesure : ";font-weight:700}
-/* Pilote */
-.pilot{display:grid;gap:0;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));background:var(--blanc);border:1px solid var(--line);border-radius:20px;overflow:hidden}
-.pilot div{padding:28px;position:relative}
-.pilot div+div{border-top:1px solid var(--line)}
-@media (min-width:820px){.pilot div+div{border-top:0;border-left:1px solid var(--line)}}
-.pilot .n{font:800 12px var(--sans);letter-spacing:.12em;color:var(--rouge);display:block;margin-bottom:10px}
-.pilot p{color:var(--muted);margin:0}
 /* Duo */
 .duo{display:grid;gap:30px}
 @media (min-width:900px){.duo{grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}.duo figure::before{inset:18px -18px -18px 18px}}
@@ -270,14 +258,14 @@ footer img{width:150px;height:auto;display:block}
 @media (prefers-reduced-motion:reduce){.track{animation:none;flex-wrap:wrap;justify-content:center;width:auto;gap:18px 40px}.track .dup{display:none}.tasks li.run .ck{animation:none}}
 </style>
 <script>document.documentElement.classList.add("js")</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://bulletin-ia.fr/#site","url":"https://bulletin-ia.fr/","name":"bulletin IA","inLanguage":"fr-FR"},{"@type":"ProfessionalService","@id":"https://bulletin-ia.fr/#org","name":"bulletin IA","url":"https://bulletin-ia.fr/","logo":"https://bulletin-ia.fr/logo.svg","image":"https://bulletin-ia.fr/og.png","description":"Conseil en intelligence artificielle appliquée aux organisations : audit des processus automatisables, recommandation à la direction, déploiement d'outils sur un pilote mesuré et formation des équipes.","areaServed":"FR","address":{"@type":"PostalAddress","addressLocality":"Paris","addressCountry":"FR"},"knowsAbout":["Intelligence artificielle","Automatisation des processus","Contrôle de gestion","Pilotage","Relation client","Formation"]}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://bulletin-ia.fr/#site","url":"https://bulletin-ia.fr/","name":"bulletin IA","inLanguage":"fr-FR"},{"@type":"ProfessionalService","@id":"https://bulletin-ia.fr/#org","name":"bulletin IA","url":"https://bulletin-ia.fr/","logo":"https://bulletin-ia.fr/logo.svg","image":"https://bulletin-ia.fr/og.png","description":"Conseil en intelligence artificielle appliquée aux organisations : diagnostic des processus, recommandation, validation avec la direction, déploiement d'outils sur un pilote mesuré et formation des équipes.","areaServed":"FR","address":{"@type":"PostalAddress","addressLocality":"Paris","addressCountry":"FR"},"knowsAbout":["Intelligence artificielle","Automatisation des processus","Contrôle de gestion","Pilotage","Relation client","Formation"]}]}</script>
 </head>
 <body>
 <a class="skip" href="#contenu">Aller au contenu</a>
 <header class="top" id="top">
   <div class="w">
     <a class="brand" href="#contenu" aria-label="bulletin IA, retour en haut"><img src="logo.svg" width="513" height="176" alt="bulletin IA"></a>
-    <nav aria-label="Navigation principale"><a class="opt" href="#offre">Offre</a><a class="opt" href="#methode">Méthode</a><a class="opt" href="#formation">Formation</a><a class="opt" href="#duo">L'équipe</a><a class="btn p" href="#contact" data-track="nav_rdv" data-prefill="rdv">Rendez-vous</a></nav>
+    <nav aria-label="Navigation principale"><a class="opt" href="#methode">Méthode</a><a class="opt" href="#exemples">Exemples</a><a class="opt" href="#formation">Formation</a><a class="opt" href="#duo">L'équipe</a><a class="btn p" href="#contact" data-track="nav_rdv" data-prefill="rdv">Rendez-vous</a></nav>
   </div>
 </header>
 
@@ -310,8 +298,8 @@ footer img{width:150px;height:auto;display:block}
   <div class="marq" aria-label="Nos parcours et nos références">
     <p>Nos parcours et nos références</p>
     <div class="track">
-      <span class="logo"><img src="logos/directlemon.png" width="229" height="16" alt="Direct Lemon" loading="lazy"></span><span class="logo"><img src="logos/jacquesbianchi.png" width="160" height="30" alt="Jacques Bianchi" loading="lazy"></span><span class="logo"><img src="logos/merciregis.png" width="177" height="34" alt="Merci Régis" loading="lazy"></span><span class="logo"><img src="logos/hermes.png" width="83" height="48" alt="Hermès" loading="lazy"></span><span class="logo"><img src="logos/bpifrance.svg" width="119" height="34" alt="Bpifrance" loading="lazy"></span><span class="logo"><img src="logos/prisma.svg" width="129" height="44" alt="Prisma Media" loading="lazy"></span><span class="logo"><img src="logos/unilabs.png" width="135" height="44" alt="Unilabs" loading="lazy"></span><span class="logo"><img src="logos/pwc.svg" width="99" height="48" alt="PwC" loading="lazy"></span><span>June Partners</span><span class="logo"><img src="logos/mikkeller.png" width="188" height="24" alt="Mikkeller" loading="lazy"></span><span class="logo"><img src="logos/stationf.svg" width="123" height="22" alt="Station F" loading="lazy"></span>
-      <span class="logo dup" aria-hidden="true"><img src="logos/directlemon.png" width="229" height="16" alt="" loading="lazy"></span><span class="logo dup" aria-hidden="true"><img src="logos/jacquesbianchi.png" width="160" height="30" alt="" loading="lazy"></span><span class="logo dup" aria-hidden="true"><img src="logos/merciregis.png" width="177" height="34" alt="" loading="lazy"></span><span class="logo dup" aria-hidden="true"><img src="logos/hermes.png" width="83" height="48" alt="" loading="lazy"></span><span class="logo dup" aria-hidden="true"><img src="logos/bpifrance.svg" width="119" height="34" alt="" loading="lazy"></span><span class="logo dup" aria-hidden="true"><img src="logos/prisma.svg" width="129" height="44" alt="" loading="lazy"></span><span class="logo dup" aria-hidden="true"><img src="logos/unilabs.png" width="135" height="44" alt="" loading="lazy"></span><span class="logo dup" aria-hidden="true"><img src="logos/pwc.svg" width="99" height="48" alt="" loading="lazy"></span><span class="dup" aria-hidden="true">June Partners</span><span class="logo dup" aria-hidden="true"><img src="logos/mikkeller.png" width="188" height="24" alt="" loading="lazy"></span><span class="logo dup" aria-hidden="true"><img src="logos/stationf.svg" width="123" height="22" alt="" loading="lazy"></span>
+      <span class="logo"><img src="logos/directlemon.png" width="229" height="16" alt="Direct Lemon" loading="lazy"></span><span class="logo"><img src="logos/jacquesbianchi.png" width="160" height="30" alt="Jacques Bianchi" loading="lazy"></span><span class="logo"><img src="logos/merciregis.png" width="177" height="34" alt="Merci Régis" loading="lazy"></span><span class="logo"><img src="logos/hermes.png" width="83" height="48" alt="Hermès" loading="lazy"></span><span class="logo"><img src="logos/bpifrance.svg" width="119" height="34" alt="Bpifrance" loading="lazy"></span><span class="logo"><img src="logos/prisma.svg" width="129" height="44" alt="Prisma Media" loading="lazy"></span><span class="logo"><img src="logos/unilabs.png" width="135" height="44" alt="Unilabs" loading="lazy"></span><span class="logo"><img src="logos/pwc.svg" width="99" height="48" alt="PwC" loading="lazy"></span><span class="logo"><img src="logos/junepartners.png" width="94" height="44" alt="June Partners" loading="lazy"></span><span class="logo"><img src="logos/mikkeller.png" width="188" height="24" alt="Mikkeller" loading="lazy"></span><span class="logo"><img src="logos/stationf.svg" width="123" height="22" alt="Station F" loading="lazy"></span>
+      <span class="logo dup" aria-hidden="true"><img src="logos/directlemon.png" width="229" height="16" alt="" loading="lazy"></span><span class="logo dup" aria-hidden="true"><img src="logos/jacquesbianchi.png" width="160" height="30" alt="" loading="lazy"></span><span class="logo dup" aria-hidden="true"><img src="logos/merciregis.png" width="177" height="34" alt="" loading="lazy"></span><span class="logo dup" aria-hidden="true"><img src="logos/hermes.png" width="83" height="48" alt="" loading="lazy"></span><span class="logo dup" aria-hidden="true"><img src="logos/bpifrance.svg" width="119" height="34" alt="" loading="lazy"></span><span class="logo dup" aria-hidden="true"><img src="logos/prisma.svg" width="129" height="44" alt="" loading="lazy"></span><span class="logo dup" aria-hidden="true"><img src="logos/unilabs.png" width="135" height="44" alt="" loading="lazy"></span><span class="logo dup" aria-hidden="true"><img src="logos/pwc.svg" width="99" height="48" alt="" loading="lazy"></span><span class="logo dup" aria-hidden="true"><img src="logos/junepartners.png" width="94" height="44" alt="" loading="lazy"></span><span class="logo dup" aria-hidden="true"><img src="logos/mikkeller.png" width="188" height="24" alt="" loading="lazy"></span><span class="logo dup" aria-hidden="true"><img src="logos/stationf.svg" width="123" height="22" alt="" loading="lazy"></span>
     </div>
   </div>
 
@@ -340,16 +328,18 @@ footer img{width:150px;height:auto;display:block}
     </div>
   </section>
 
-  <section class="sec ciel" id="offre" aria-labelledby="offre-titre">
+  <section class="sec ciel" id="methode" aria-labelledby="methode-titre">
+    <span id="offre" class="anchor" aria-hidden="true"></span>
     <div class="w">
-      <div class="head2 rv"><div><p class="kick">Notre offre</p><h2 id="offre-titre">De l'audit à l'autonomie, en quatre temps</h2></div>
-      <p class="lead">Confiez-nous tout le parcours, ou une seule étape.</p></div>
-      <div class="offer">
-        <div class="oc rv"><span class="num">1</span><span class="tag">Audit</span><h3>Ce qui peut être automatisé</h3><p>Nous observons les tâches réelles de chaque service : volumes, délais, irritants, outils et licences déjà payés.</p></div>
-        <div class="oc rv d1"><span class="num">2</span><span class="tag">Direction</span><h3>Des choix clairs à valider</h3><p>Usages prioritaires, outils, coût complet et critères de succès, présentés à la direction et à la DSI.</p></div>
-        <div class="oc rv d2"><span class="num">3</span><span class="tag">Déploiement</span><h3>Un pilote qui tourne</h3><p>Outils configurés, flux intégrés, tests sur vos cas réels et mesure avant / après, avant de généraliser.</p></div>
-        <div class="oc rv d3"><span class="num">4</span><span class="tag">Formation</span><h3>Des usages au quotidien</h3><p>Formation pratique par niveau, guide d'utilisation et suivi de l'adoption dans les semaines qui suivent.</p></div>
-      </div>
+      <div class="head2 rv"><div><p class="kick">Notre méthode</p><h2 id="methode-titre">Cinq étapes, du diagnostic à l'autonomie</h2></div>
+      <p class="lead">À chaque étape, vous savez ce que nous faisons et ce que vous obtenez. Confiez-nous tout le parcours, ou une seule étape : calendrier et budget sont fixés après le diagnostic.</p></div>
+      <ol class="flow">
+        <li class="rv "><div class="ft"><span class="fn">1</span><svg class="fi" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg></div><h3>Diagnostic</h3><p>Nous observons le travail réel de chaque service : volumes, délais, irritants, outils et licences déjà payés.</p><em>La liste des tâches à alléger</em></li>
+        <li class="rv d1"><div class="ft"><span class="fn">2</span><svg class="fi" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6h11M9 12h11M9 18h11"/><path d="m3.5 6 1 1 2-2M3.5 12l1 1 2-2M3.5 18l1 1 2-2"/></svg></div><h3>Recommandation</h3><p>Nous retenons les usages les plus utiles, les outils adaptés, leur coût complet et les critères de succès.</p><em>Un plan chiffré</em></li>
+        <li class="rv d2"><div class="ft"><span class="fn">3</span><svg class="fi" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4 6v6c0 4.5 3.4 8 8 9 4.6-1 8-4.5 8-9V6z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg></div><h3>Validation</h3><p>Vous arrêtez avec nous, direction et DSI, le périmètre, le budget et les objectifs.</p><em>Une feuille de route validée</em></li>
+        <li class="rv d3"><div class="ft"><span class="fn">4</span><svg class="fi" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 17V7l8-4 8 4v10l-8 4z"/><path d="m4 7 8 4 8-4M12 11v10"/></svg></div><h3>Déploiement</h3><p>Nous configurons les outils sur un premier processus, testons sur vos cas réels et mesurons avant / après.</p><em>Un pilote qui tourne</em></li>
+        <li class="rv d3"><div class="ft"><span class="fn">5</span><svg class="fi" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 9 12 4l10 5-10 5z"/><path d="M6 11v5c3 2.5 9 2.5 12 0v-5M22 9v6"/></svg></div><h3>Formation</h3><p>Nous formons vos équipes sur leurs vrais dossiers, laissons un guide et suivons l'adoption.</p><em>Des équipes autonomes</em></li>
+      </ol>
     </div>
   </section>
 
@@ -364,21 +354,7 @@ footer img{width:150px;height:auto;display:block}
     </div>
   </section>
 
-  <section class="sec ciel" id="methode" aria-labelledby="methode-titre">
-    <div class="w">
-      <div class="head2 rv"><div><p class="kick">Méthode</p><h2 id="methode-titre">Comment nous travaillons</h2></div>
-      <p class="lead">Cinq étapes, du premier rendez-vous à l'autonomie de vos équipes. À chacune, vous savez ce que nous faisons et ce que vous obtenez.</p></div>
-      <ol class="flow">
-        <li class="rv"><span class="fn">1</span><h3>Diagnostic</h3><p>Nous observons le travail de vos équipes pour voir où part le temps.</p><em>La liste des tâches à automatiser</em></li>
-        <li class="rv d1"><span class="fn">2</span><h3>Recommandation</h3><p>Nous choisissons les usages les plus utiles et les outils adaptés.</p><em>Un plan chiffré</em></li>
-        <li class="rv d2"><span class="fn">3</span><h3>Validation</h3><p>Vous arrêtez avec nous le périmètre, le budget et les objectifs.</p><em>Une feuille de route validée</em></li>
-        <li class="rv d3"><span class="fn">4</span><h3>Déploiement</h3><p>Nous installons l'outil sur un premier processus et mesurons le résultat.</p><em>Un pilote qui tourne</em></li>
-        <li class="rv d3"><span class="fn">5</span><h3>Formation</h3><p>Nous formons vos équipes sur leurs vrais dossiers et laissons un guide.</p><em>Des équipes autonomes</em></li>
-      </ol>
-    </div>
-  </section>
-
-  <section class="sec" id="formation" aria-labelledby="form-titre">
+  <section class="sec ciel" id="formation" aria-labelledby="form-titre">
     <div class="w">
       <div class="head2 rv"><div><p class="kick">Formation</p><h2 id="form-titre">Trois niveaux, sur vos propres cas</h2></div>
       <p class="lead">Pas de cours théorique : chaque séance part des tâches que vos équipes font déjà. La formation peut se prendre seule, sans projet de déploiement.</p></div>
@@ -390,7 +366,7 @@ footer img{width:150px;height:auto;display:block}
     </div>
   </section>
 
-  <section class="sec ciel" id="exemples" aria-labelledby="ex-titre">
+  <section class="sec" id="exemples" aria-labelledby="ex-titre">
     <div class="w">
       <div class="head2 rv"><div><p class="kick">Exemples d'application</p><h2 id="ex-titre">Deux exemples parmi d'autres</h2></div>
       <p class="lead">L'IA s'applique à presque chaque service. Voici deux cas que nous connaissons bien, pour donner une idée concrète ; chez vous, le diagnostic fera apparaître les vôtres.</p></div>
@@ -403,18 +379,6 @@ footer img{width:150px;height:auto;display:block}
           <dl><dt>Budget et prévisions</dt><dd>Consolider réalisé, engagé et prévisionnel, calculer les écarts, préparer le commentaire.<small>temps de consolidation, délai du reporting</small></dd>
           <dt>Dépenses</dt><dd>Rapprocher commandes, consommations et imputations, faire remonter les incohérences.<small>anomalies détectées, temps de résolution</small></dd>
           <dt>Comités de pilotage</dt><dd>Préparer le support de synthèse en reliant chaque chiffre à sa source.<small>temps de préparation, demandes de reprise</small></dd></dl></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="sec" aria-labelledby="pilote-titre">
-    <div class="w">
-      <div class="head2 rv"><div><p class="kick">Pour commencer</p><h2 id="pilote-titre">Une première mission courte, centrée sur un pilote</h2></div>
-      <p class="lead">Un périmètre limité, des résultats mesurés, puis le déploiement. Calendrier et budget sont fixés après le diagnostic.</p></div>
-      <div class="pilot rv">
-        <div><span class="n">ÉTAPE 1</span><h3>Diagnostic ciblé</h3><p>Cartographie, besoins des équipes, usages prioritaires, outils et coûts.</p></div>
-        <div><span class="n">ÉTAPE 2</span><h3>Pilote sur un processus</h3><p>Flux configuré, tests sur cas réels, mesure avant / après, bilan économique.</p></div>
-        <div><span class="n">ÉTAPE 3</span><h3>Déploiement et formation</h3><p>Extension des usages validés, guide pratique, suivi de l'adoption.</p></div>
       </div>
     </div>
   </section>
