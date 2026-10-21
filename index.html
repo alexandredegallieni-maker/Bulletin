@@ -30,7 +30,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;800&family=Bagel+Fat+One&display=swap">
 <style>
-:root{--bleu:#0B2A5B;--rouge:#D62828;--ciel:#E8EEF7;--blanc:#FFFFFF;--encre:#0F172A;--muted:#4A5872;--line:#D5DEEC;--vert:#1F7A4D;
+:root{--bleu:#0B2A5B;--rouge:#8C1D2F;--ciel:#E8EEF7;--blanc:#FFFFFF;--encre:#0F172A;--muted:#4A5872;--line:#D5DEEC;--vert:#1F7A4D;
 --wrap:1160px;--display:"Bagel Fat One","Archivo",system-ui,sans-serif;--sans:"Archivo",system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%;color-scheme:light}
@@ -68,8 +68,8 @@ p{margin:0 0 14px}
 @media (max-width:899px){.top nav .opt{display:none}}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;font:800 17px/1.2 var(--sans);padding:15px 26px;
 border-radius:999px;text-decoration:none;border:2px solid var(--bleu);text-align:center;cursor:pointer;transition:transform .15s,box-shadow .15s,background .15s}
-.btn.p{background:var(--rouge);border-color:var(--rouge);color:#fff;box-shadow:0 10px 24px -10px rgba(214,40,40,.7)}
-.btn.p:hover{transform:translateY(-2px);box-shadow:0 14px 28px -10px rgba(214,40,40,.8)}
+.btn.p{background:var(--rouge);border-color:var(--rouge);color:#fff;box-shadow:0 10px 24px -10px rgba(140,29,47,.7)}
+.btn.p:hover{transform:translateY(-2px);box-shadow:0 14px 28px -10px rgba(140,29,47,.8)}
 .btn.s{color:var(--bleu);background:transparent}
 .btn.s:hover{background:var(--ciel)}
 .btn .arr{transition:transform .15s}.btn:hover .arr{transform:translateX(4px)}
@@ -157,6 +157,18 @@ border-radius:999px;text-decoration:none;border:2px solid var(--bleu);text-align
 .steps i{font-style:normal;font-size:15px;font-weight:600}
 .steps i::before{content:"Vous obtenez : ";display:block;font:800 12px/1.6 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--rouge)}
 @media (min-width:900px){.steps li{grid-template-columns:56px 260px 1fr 1fr;align-items:start}.steps li::before{grid-row:auto}.steps span,.steps i{padding-top:14px}}
+/* Méthode */
+.flow{list-style:none;margin:0;padding:0;display:grid;gap:14px;position:relative}
+@media (min-width:980px){.flow{grid-template-columns:repeat(5,1fr);gap:16px}
+.flow::before{content:"";position:absolute;left:8%;right:8%;top:34px;height:4px;background:repeating-linear-gradient(90deg,var(--bleu) 0 14px,transparent 14px 24px);opacity:.25}}
+.flow li{position:relative;background:var(--blanc);border-radius:20px;padding:24px 22px 22px;display:flex;flex-direction:column;box-shadow:0 20px 40px -32px rgba(11,42,91,.5);transition:transform .2s}
+.flow li:hover{transform:translateY(-6px)}
+.flow .fn{width:48px;height:48px;border-radius:14px;background:var(--bleu);color:#fff;display:grid;place-items:center;font:400 24px/1 var(--display);margin-bottom:16px;position:relative;z-index:1;box-shadow:0 0 0 6px var(--ciel)}
+.flow li:last-child .fn{background:var(--rouge)}
+.flow h3{font-size:20px;margin-bottom:6px}
+.flow p{color:var(--muted);font-size:15px;margin:0 0 16px;flex:1}
+.flow em{font-style:normal;font:700 14px/1.35 var(--sans);color:var(--bleu);background:var(--ciel);border-radius:12px;padding:10px 12px}
+.flow em::before{content:"Vous obtenez";display:block;font:800 11px/1.4 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--rouge);margin-bottom:2px}
 /* Formation */
 .lvls{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(min(100%,270px),1fr))}
 .lvl{background:var(--blanc);border-radius:20px;padding:28px;border:1px solid var(--line)}
@@ -218,7 +230,7 @@ border-radius:999px;text-decoration:none;border:2px solid var(--bleu);text-align
 .final ul{margin:0 0 8px;padding:0;list-style:none;display:grid;gap:10px;font-weight:600}
 .final li::before{content:"✓";display:inline-grid;place-items:center;width:24px;height:24px;border-radius:50%;background:var(--rouge);margin-right:10px;font-size:13px;font-weight:800}
 .final .ico{width:84px;height:auto;margin-bottom:20px;border-radius:20px}
-.final .kick{color:#FFB4B4}.final .kick::before{background:#FFB4B4}
+.final .kick{color:#E9A9B4}.final .kick::before{background:#E9A9B4}
 .contact{background:var(--blanc);color:var(--encre);border-radius:20px;padding:22px 18px}
 @media (min-width:600px){.contact{padding:30px}}
 .contact form{display:grid;gap:14px}
@@ -266,7 +278,7 @@ footer img{width:150px;height:auto;display:block}
       <div>
         <p class="kick">Conseil en IA pour les organisations</p>
         <h1 id="titre">L'IA au travail dans votre <span class="rot" aria-hidden="true"><span class="on">finance.</span><span>commercial.</span><span>pilotage.</span><span>administratif.</span><span>RH.</span></span><span class="sr" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">organisation.</span></h1>
-        <p class="lead">Nous repérons ce que l'IA peut vraiment faire chez vous, nous la mettons en place sur un pilote mesuré, puis nous formons vos équipes pour qu'elles s'en servent chaque jour.</p>
+        <p class="lead">Reportings, relances, saisies, comptes rendus : nous identifions les tâches que l'IA peut faire à la place de vos équipes, nous installons les outils, puis nous les formons à s'en servir.</p>
         <div class="ctarow"><a class="btn p" href="#contact" data-track="hero_rdv" data-prefill="rdv">Réserver 30 min offertes <span class="arr" aria-hidden="true">→</span></a><a class="btn s" href="#methode">Voir la méthode</a></div>
         <ul class="reass"><li>Gratuit et sans engagement</li><li>3 pistes concrètes par écrit</li><li>Un associé en face de vous</li></ul>
       </div>
@@ -331,14 +343,14 @@ footer img{width:150px;height:auto;display:block}
 
   <section class="sec ciel" id="methode" aria-labelledby="methode-titre">
     <div class="w">
-      <div class="head2 rv"><div><p class="kick">Méthode</p><h2 id="methode-titre">Comment nous travaillons, étape par étape</h2></div>
-      <p class="lead">Du premier rendez-vous à l'autonomie de vos équipes : à chaque étape, vous savez ce que nous faisons et ce que vous obtenez.</p></div>
-      <ol class="steps">
-        <li class="rv"><b>Diagnostic</b><span>Nous passons du temps avec vos équipes pour voir où part leur temps et ce qui peut être automatisé.</span><i>la liste des tâches à automatiser, par service</i></li>
-        <li class="rv"><b>Recommandation</b><span>Nous choisissons les usages qui rapportent le plus et les outils adaptés, avec leur coût.</span><i>un plan clair et chiffré</i></li>
-        <li class="rv"><b>Validation</b><span>Vous décidez avec nous du périmètre, du budget et des objectifs à atteindre.</span><i>une feuille de route validée par la direction</i></li>
-        <li class="rv"><b>Déploiement</b><span>Nous mettons l'outil en place sur un premier processus et nous mesurons le résultat.</span><i>un pilote qui tourne, avec ses résultats</i></li>
-        <li class="rv"><b>Appropriation</b><span>Nous formons vos équipes sur leurs vrais dossiers et leur laissons un guide.</span><i>des équipes autonomes</i></li>
+      <div class="head2 rv"><div><p class="kick">Méthode</p><h2 id="methode-titre">Comment nous travaillons</h2></div>
+      <p class="lead">Cinq étapes, du premier rendez-vous à l'autonomie de vos équipes. À chacune, vous savez ce que nous faisons et ce que vous obtenez.</p></div>
+      <ol class="flow">
+        <li class="rv"><span class="fn">1</span><h3>Diagnostic</h3><p>Nous observons le travail de vos équipes pour voir où part le temps.</p><em>La liste des tâches à automatiser</em></li>
+        <li class="rv d1"><span class="fn">2</span><h3>Recommandation</h3><p>Nous choisissons les usages les plus utiles et les outils adaptés.</p><em>Un plan chiffré</em></li>
+        <li class="rv d2"><span class="fn">3</span><h3>Validation</h3><p>Vous arrêtez avec nous le périmètre, le budget et les objectifs.</p><em>Une feuille de route validée</em></li>
+        <li class="rv d3"><span class="fn">4</span><h3>Déploiement</h3><p>Nous installons l'outil sur un premier processus et mesurons le résultat.</p><em>Un pilote qui tourne</em></li>
+        <li class="rv d3"><span class="fn">5</span><h3>Formation</h3><p>Nous formons vos équipes sur leurs vrais dossiers et laissons un guide.</p><em>Des équipes autonomes</em></li>
       </ol>
     </div>
   </section>
@@ -360,11 +372,11 @@ footer img{width:150px;height:auto;display:block}
       <div class="head2 rv"><div><p class="kick">Exemples d'application</p><h2 id="ex-titre">Deux exemples parmi d'autres</h2></div>
       <p class="lead">L'IA s'applique à presque chaque service. Voici deux cas que nous connaissons bien, pour donner une idée concrète ; chez vous, le diagnostic fera apparaître les vôtres.</p></div>
       <div class="cases">
-        <div class="case rv"><h3>Gestion d'un bar-restaurant parisien</h3><p class="exp">Vécu : création de l'établissement, puis automatisation de la gestion, du reporting groupe, des clôtures et des inventaires.</p>
-          <dl><dt>Reporting hebdomadaire</dt><dd>Consolider les ventes, calculer les écarts, rédiger un premier commentaire.<small>temps de préparation, corrections, délai de diffusion</small></dd>
-          <dt>Stocks et achats</dt><dd>Rapprocher ventes et inventaires, signaler les écarts, préparer la commande à valider.<small>temps d'inventaire, écarts, ruptures</small></dd>
+        <div class="case rv"><h3>Gestion d'une PME commerce ou services</h3><p class="exp">Vécu : création et gestion d'une entreprise, avec mise en place puis automatisation du reporting, des clôtures et des stocks.</p>
+          <dl><dt>Reporting de l'activité</dt><dd>Consolider les ventes, calculer les écarts, rédiger un premier commentaire.<small>temps de préparation, corrections, délai de diffusion</small></dd>
+          <dt>Achats et stocks</dt><dd>Rapprocher ventes, achats et inventaires, signaler les écarts, préparer les commandes à valider.<small>temps d'inventaire, écarts, ruptures</small></dd>
           <dt>Clôture</dt><dd>Collecter et classer les pièces, suivre les manquants, préparer la synthèse.<small>pièces manquantes, temps de clôture</small></dd></dl></div>
-        <div class="case rv d1"><h3>Pilotage d'un budget de 66 M€</h3><p class="exp">Vécu : appui au pilotage budgétaire de la direction du Digital d'une grande institution.</p>
+        <div class="case rv d1"><h3>Pilotage budgétaire d'une grande direction</h3><p class="exp">Vécu : suivi d'un budget de 66 M€ pour la direction du Digital d'une grande institution financière.</p>
           <dl><dt>Budget et prévisions</dt><dd>Consolider réalisé, engagé et prévisionnel, calculer les écarts, préparer le commentaire.<small>temps de consolidation, délai du reporting</small></dd>
           <dt>Dépenses</dt><dd>Rapprocher commandes, consommations et imputations, faire remonter les incohérences.<small>anomalies détectées, temps de résolution</small></dd>
           <dt>Comités de pilotage</dt><dd>Préparer le support de synthèse en reliant chaque chiffre à sa source.<small>temps de préparation, demandes de reprise</small></dd></dl></div>
@@ -388,7 +400,7 @@ footer img{width:150px;height:auto;display:block}
     <div class="w">
       <div class="rv" style="margin-bottom:36px"><p class="kick">L'équipe</p><h2 id="duo-titre">Deux entrepreneurs, à la croisée du business, de la finance et de l'IA</h2></div>
       <div class="duo">
-        <figure class="rv"><img src="duo.jpg" width="605" height="588" loading="lazy" decoding="async" alt="Aloïs et Marie, les deux associés"></figure>
+        <figure class="rv"><img src="duo.jpg" width="1100" height="826" loading="lazy" decoding="async" alt="Aloïs et Marie, les deux associés"></figure>
         <div>
           <div class="bio rv"><h3>Marie</h3><span>ENTREPRENEURE · FINANCE · OPÉRATIONS</span>
             <p>Diplômée de Paris-Dauphine, fondatrice de Mikkeller Bar Paris : elle en a piloté le financement, l'ouverture et la structuration. L'activité réalise aujourd'hui environ 500 k€ de chiffre d'affaires, avec une gestion déléguée.</p>
