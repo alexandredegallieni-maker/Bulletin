@@ -5,3 +5,6 @@
 ## Pages principales
 
 - [Accueil](https://bulletin-ia.fr/) : méthode en cinq étapes, exemples d’application, équipe, questions fréquentes, contact
+- [Conseil en IA et implémentation en entreprise](https://bulletin-ia.fr/conseil-ia-entreprise/) : méthode, cas d'usage par métier, équipe
+- [L'IA pour la finance et le contrôle de gestion](https://bulletin-ia.fr/ia-finance-controle-de-gestion/) : reporting, budget, clôture, dépenses
+- [Formation à l'IA pour vos équipes](https://bulletin-ia.fr/formation-ia-entreprise/) : trois niveaux, sur vos propres dossiers
