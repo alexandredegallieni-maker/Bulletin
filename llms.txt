@@ -1,20 +1,7 @@
 # Bulletin IA
 
-> Bulletin IA regarde chaque mois ce que ChatGPT, Gemini, Claude et Perplexity disent des commerces indépendants (restaurants, salons de coiffure, instituts de beauté) à Paris, et qui ils conseillent dans leur quartier. Audit gratuit ; formule « Je vous guide » à 29 € par mois (bulletin et corrections pas à pas, 290 € par an avec un appel de 15 minutes) ; formule « Je m'en occupe » à 79 € par mois (fiche Google tenue à jour, 4 publications par mois, réponse à chaque nouvel avis, bulletin). Prix TTC par établissement, sans engagement. Bulletin IA ne promet jamais qu'une IA recommandera un commerce et ne publie jamais de faux avis.
+> Bulletin IA est une activité de conseil en intelligence artificielle appliquée aux organisations, basée à Paris, portée par Marie et Aloïs. Elle intervient sur tous les métiers (finance, contrôle de gestion, pilotage, commercial, administratif…) en quatre temps : audit interne des processus automatisables, présentation à la direction, déploiement d'outils sur un pilote, formation des équipes. Aucun gain n'est promis avant d'avoir été mesuré : l'IA assiste, le métier valide et la direction garde les arbitrages.
 
 ## Pages principales
 
-- [Accueil et offre](https://bulletin-ia.fr/) : audit gratuit, exemple de bulletin, les deux formules et leurs prix, méthode, questions fréquentes
-- [Restaurants : ChatGPT vous conseille-t-il ?](https://bulletin-ia.fr/restaurants/) : Ce que les IA répondent quand on cherche un restaurant à Paris, les erreurs vues en octobre 2026 et ce qu'il faut vérifier.
-- [Coiffeurs : ChatGPT vous conseille-t-il ?](https://bulletin-ia.fr/coiffeurs/) : Ce que les IA répondent quand on cherche un coiffeur à Paris, le rôle de Planity et Treatwell, et ce qu'il faut vérifier.
-- [Instituts de beauté : ChatGPT vous conseille-t-il ?](https://bulletin-ia.fr/instituts-de-beaute/) : Ce que les IA répondent quand on cherche un institut de beauté à Paris, un exemple réel et ce qu'il faut vérifier.
-- [Étude : ce que les IA disent de 30 commerces parisiens](https://bulletin-ia.fr/etude-ia-commerces-paris/) : Résultats chiffrés et méthode d'un test de ChatGPT, Gemini, Claude et Perplexity sur 30 commerces indépendants parisiens (octobre 2026).
-- [ChatGPT donne de mauvais horaires pour mon commerce : que faire ?](https://bulletin-ia.fr/chatgpt-mauvais-horaires/) : Pourquoi les assistants IA se trompent sur les horaires d'un commerce, et où se trouvent les sources à corriger.
-- [Comment faire apparaître son commerce dans ChatGPT ?](https://bulletin-ia.fr/apparaitre-dans-chatgpt/) : Ce qui aide un commerce de quartier à être cité par ChatGPT, Gemini, Claude et Perplexity, sans promesse impossible.
-
-## Chiffres clés (test du 6 octobre 2026, 30 commerces parisiens)
-
-- 23 sur 30 avaient au moins un problème : horaires faux ou jamais cités par les IA dans leur quartier.
-- 20 sur 30 n'étaient cités par aucune des 4 IA quand on demandait les meilleures adresses près du métro.
-- 10 sur 30 avaient des horaires faux, répétés par la même IA dans des conversations différentes.
-- Petit échantillon : ce n'est pas une statistique nationale.
+- [Accueil](https://bulletin-ia.fr/) : offre, méthode en cinq étapes, exemples d'application, première mission pilote, équipe, questions fréquentes, contact
