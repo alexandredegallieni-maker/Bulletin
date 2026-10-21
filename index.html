@@ -150,6 +150,13 @@ border-radius:999px;text-decoration:none;border:2px solid var(--bleu);text-align
 .tags li:hover{background:var(--bleu);color:#fff}
 .tags.alt li{border-color:var(--line);color:var(--encre)}
 .tags.alt li:hover{background:var(--rouge);border-color:var(--rouge);color:#fff}
+/* Offre */
+.offer{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));counter-reset:o}
+.oc{position:relative;background:var(--blanc);border:1px solid var(--line);border-radius:20px;padding:26px 24px 24px;transition:transform .2s,box-shadow .2s,border-color .2s}
+.oc:hover{transform:translateY(-6px);box-shadow:0 30px 50px -30px rgba(44,62,92,.45);border-color:var(--bleu)}
+.oc .num{font:400 44px/1 var(--display);color:var(--bleu);display:block;margin-bottom:18px}
+.oc .tag{position:absolute;top:24px;right:22px;font:800 11px var(--sans);letter-spacing:.1em;color:var(--rouge);text-transform:uppercase}
+.oc p{color:var(--muted);margin:0;font-size:16px}
 /* Méthode */
 .steps{list-style:none;margin:0;padding:0;display:grid;gap:0;counter-reset:s;position:relative}
 .steps li{counter-increment:s;display:grid;grid-template-columns:56px 1fr;gap:4px 22px;padding:0 0 30px;position:relative}
@@ -265,7 +272,7 @@ footer img{width:150px;height:auto;display:block}
 <header class="top" id="top">
   <div class="w">
     <a class="brand" href="#contenu" aria-label="bulletin IA, retour en haut"><img src="logo.svg" width="513" height="176" alt="bulletin IA"></a>
-    <nav aria-label="Navigation principale"><a class="opt" href="#methode">Méthode</a><a class="opt" href="#exemples">Exemples</a><a class="opt" href="#formation">Formation</a><a class="opt" href="#duo">L'équipe</a><a class="btn p" href="#contact" data-track="nav_rdv" data-prefill="rdv">Rendez-vous</a></nav>
+    <nav aria-label="Navigation principale"><a class="opt" href="#offre">Offre</a><a class="opt" href="#methode">Méthode</a><a class="opt" href="#formation">Formation</a><a class="opt" href="#duo">L'équipe</a><a class="btn p" href="#contact" data-track="nav_rdv" data-prefill="rdv">Rendez-vous</a></nav>
   </div>
 </header>
 
@@ -328,18 +335,16 @@ footer img{width:150px;height:auto;display:block}
     </div>
   </section>
 
-  <section class="sec ciel" id="methode" aria-labelledby="methode-titre">
-    <span id="offre" class="anchor" aria-hidden="true"></span>
+  <section class="sec ciel" id="offre" aria-labelledby="offre-titre">
     <div class="w">
-      <div class="head2 rv"><div><p class="kick">Notre méthode</p><h2 id="methode-titre">Cinq étapes, du diagnostic à l'autonomie</h2></div>
-      <p class="lead">À chaque étape, vous savez ce que nous faisons et ce que vous obtenez. Confiez-nous tout le parcours, ou une seule étape : calendrier et budget sont fixés après le diagnostic.</p></div>
-      <ol class="flow">
-        <li class="rv "><div class="ft"><span class="fn">1</span><svg class="fi" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg></div><h3>Diagnostic</h3><p>Nous observons le travail réel de chaque service : volumes, délais, irritants, outils et licences déjà payés.</p><em>La liste des tâches à alléger</em></li>
-        <li class="rv d1"><div class="ft"><span class="fn">2</span><svg class="fi" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6h11M9 12h11M9 18h11"/><path d="m3.5 6 1 1 2-2M3.5 12l1 1 2-2M3.5 18l1 1 2-2"/></svg></div><h3>Recommandation</h3><p>Nous retenons les usages les plus utiles, les outils adaptés, leur coût complet et les critères de succès.</p><em>Un plan chiffré</em></li>
-        <li class="rv d2"><div class="ft"><span class="fn">3</span><svg class="fi" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4 6v6c0 4.5 3.4 8 8 9 4.6-1 8-4.5 8-9V6z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg></div><h3>Validation</h3><p>Vous arrêtez avec nous, direction et DSI, le périmètre, le budget et les objectifs.</p><em>Une feuille de route validée</em></li>
-        <li class="rv d3"><div class="ft"><span class="fn">4</span><svg class="fi" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 17V7l8-4 8 4v10l-8 4z"/><path d="m4 7 8 4 8-4M12 11v10"/></svg></div><h3>Déploiement</h3><p>Nous configurons les outils sur un premier processus, testons sur vos cas réels et mesurons avant / après.</p><em>Un pilote qui tourne</em></li>
-        <li class="rv d3"><div class="ft"><span class="fn">5</span><svg class="fi" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 9 12 4l10 5-10 5z"/><path d="M6 11v5c3 2.5 9 2.5 12 0v-5M22 9v6"/></svg></div><h3>Formation</h3><p>Nous formons vos équipes sur leurs vrais dossiers, laissons un guide et suivons l'adoption.</p><em>Des équipes autonomes</em></li>
-      </ol>
+      <div class="head2 rv"><div><p class="kick">Notre offre</p><h2 id="offre-titre">De l'audit à l'autonomie, en quatre temps</h2></div>
+      <p class="lead">Confiez-nous tout le parcours, ou une seule étape.</p></div>
+      <div class="offer">
+        <div class="oc rv"><span class="num">1</span><span class="tag">Audit</span><h3>Ce qui peut être automatisé</h3><p>Nous observons les tâches réelles de chaque service : volumes, délais, irritants, outils et licences déjà payés.</p></div>
+        <div class="oc rv d1"><span class="num">2</span><span class="tag">Direction</span><h3>Des choix clairs à valider</h3><p>Usages prioritaires, outils, coût complet et critères de succès, présentés à la direction et à la DSI.</p></div>
+        <div class="oc rv d2"><span class="num">3</span><span class="tag">Déploiement</span><h3>Un pilote qui tourne</h3><p>Outils configurés, flux intégrés, tests sur vos cas réels et mesure avant / après, avant de généraliser.</p></div>
+        <div class="oc rv d3"><span class="num">4</span><span class="tag">Formation</span><h3>Des usages au quotidien</h3><p>Formation pratique par niveau, guide d'utilisation et suivi de l'adoption dans les semaines qui suivent.</p></div>
+      </div>
     </div>
   </section>
 
@@ -354,7 +359,21 @@ footer img{width:150px;height:auto;display:block}
     </div>
   </section>
 
-  <section class="sec ciel" id="formation" aria-labelledby="form-titre">
+  <section class="sec ciel" id="methode" aria-labelledby="methode-titre">
+    <div class="w">
+      <div class="head2 rv"><div><p class="kick">Notre méthode</p><h2 id="methode-titre">Cinq étapes, du diagnostic à l'autonomie</h2></div>
+      <p class="lead">À chaque étape, vous savez ce que nous faisons et ce que vous obtenez. Confiez-nous tout le parcours, ou une seule étape : calendrier et budget sont fixés après le diagnostic.</p></div>
+      <ol class="flow">
+        <li class="rv "><div class="ft"><span class="fn">1</span><svg class="fi" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg></div><h3>Diagnostic</h3><p>Nous observons le travail réel de chaque service : volumes, délais, irritants, outils et licences déjà payés.</p><em>La liste des tâches à alléger</em></li>
+        <li class="rv d1"><div class="ft"><span class="fn">2</span><svg class="fi" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6h11M9 12h11M9 18h11"/><path d="m3.5 6 1 1 2-2M3.5 12l1 1 2-2M3.5 18l1 1 2-2"/></svg></div><h3>Recommandation</h3><p>Nous retenons les usages les plus utiles, les outils adaptés, leur coût complet et les critères de succès.</p><em>Un plan chiffré</em></li>
+        <li class="rv d2"><div class="ft"><span class="fn">3</span><svg class="fi" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4 6v6c0 4.5 3.4 8 8 9 4.6-1 8-4.5 8-9V6z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg></div><h3>Validation</h3><p>Vous arrêtez avec nous, direction et DSI, le périmètre, le budget et les objectifs.</p><em>Une feuille de route validée</em></li>
+        <li class="rv d3"><div class="ft"><span class="fn">4</span><svg class="fi" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 17V7l8-4 8 4v10l-8 4z"/><path d="m4 7 8 4 8-4M12 11v10"/></svg></div><h3>Déploiement</h3><p>Nous configurons les outils sur un premier processus, testons sur vos cas réels et mesurons avant / après.</p><em>Un pilote qui tourne</em></li>
+        <li class="rv d3"><div class="ft"><span class="fn">5</span><svg class="fi" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 9 12 4l10 5-10 5z"/><path d="M6 11v5c3 2.5 9 2.5 12 0v-5M22 9v6"/></svg></div><h3>Formation</h3><p>Nous formons vos équipes sur leurs vrais dossiers, laissons un guide et suivons l'adoption.</p><em>Des équipes autonomes</em></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="sec" id="formation" aria-labelledby="form-titre">
     <div class="w">
       <div class="head2 rv"><div><p class="kick">Formation</p><h2 id="form-titre">Trois niveaux, sur vos propres cas</h2></div>
       <p class="lead">Pas de cours théorique : chaque séance part des tâches que vos équipes font déjà. La formation peut se prendre seule, sans projet de déploiement.</p></div>
@@ -366,7 +385,7 @@ footer img{width:150px;height:auto;display:block}
     </div>
   </section>
 
-  <section class="sec" id="exemples" aria-labelledby="ex-titre">
+  <section class="sec ciel" id="exemples" aria-labelledby="ex-titre">
     <div class="w">
       <div class="head2 rv"><div><p class="kick">Exemples d'application</p><h2 id="ex-titre">Deux exemples parmi d'autres</h2></div>
       <p class="lead">L'IA s'applique à presque chaque service. Voici deux cas que nous connaissons bien, pour donner une idée concrète ; chez vous, le diagnostic fera apparaître les vôtres.</p></div>
@@ -383,7 +402,7 @@ footer img{width:150px;height:auto;display:block}
     </div>
   </section>
 
-  <section class="sec ciel" id="duo" aria-labelledby="duo-titre">
+  <section class="sec" id="duo" aria-labelledby="duo-titre">
     <div class="w">
       <div class="rv" style="margin-bottom:36px"><p class="kick">L'équipe</p><h2 id="duo-titre">Deux entrepreneurs, à la croisée du business, de la finance et de l'IA</h2></div>
       <div class="duo">
@@ -401,7 +420,7 @@ footer img{width:150px;height:auto;display:block}
     </div>
   </section>
 
-  <section class="sec" aria-labelledby="eng-titre">
+  <section class="sec ciel" aria-labelledby="eng-titre">
     <div class="w">
       <div class="rv"><p class="kick">Nos engagements</p><h2 id="eng-titre">Ce que vous pouvez attendre de nous</h2></div>
       <div class="eng" style="margin-top:28px">
@@ -413,7 +432,7 @@ footer img{width:150px;height:auto;display:block}
     </div>
   </section>
 
-  <section class="sec ciel" id="questions" aria-labelledby="faq-titre">
+  <section class="sec" id="questions" aria-labelledby="faq-titre">
     <div class="w">
       <h2 id="faq-titre" class="rv">Vos questions</h2>
       <div class="faq rv">
@@ -427,7 +446,7 @@ footer img{width:150px;height:auto;display:block}
     </div>
   </section>
 
-  <section class="sec" id="contact" aria-labelledby="contact-titre">
+  <section class="sec ciel" id="contact" aria-labelledby="contact-titre">
     <div class="w">
       <div class="final rv">
         <div>
