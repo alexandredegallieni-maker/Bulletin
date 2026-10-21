@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url><loc>https://bulletin-ia.fr/</loc><lastmod>2026-10-21</lastmod></url>
   <url><loc>https://bulletin-ia.fr/conseil-ia-entreprise/</loc><lastmod>2026-10-21</lastmod></url>
   <url><loc>https://bulletin-ia.fr/ia-finance-controle-de-gestion/</loc><lastmod>2026-10-21</lastmod></url>
   <url><loc>https://bulletin-ia.fr/formation-ia-entreprise/</loc><lastmod>2026-10-21</lastmod></url>
+  <url><loc>https://bulletin-ia.fr/video/</loc><lastmod>2026-10-21</lastmod>
+    <video:video>
+      <video:thumbnail_loc>https://bulletin-ia.fr/video/poster.jpg</video:thumbnail_loc>
+      <video:title>bulletin IA : notre méthode en une minute</video:title>
+      <video:description>Comment bulletin IA aide les entreprises à gagner du temps grâce à l'IA : diagnostic, recommandation, validation, déploiement sur un pilote mesuré et formation des équipes.</video:description>
+      <video:content_loc>https://bulletin-ia.fr/video/bulletin-ia.mp4</video:content_loc>
+      <video:duration>55</video:duration>
+      <video:publication_date>2026-10-21T18:00:00+02:00</video:publication_date>
+    </video:video>
+  </url>
 </urlset>
