@@ -82,6 +82,9 @@ border-radius:999px;text-decoration:none;border:2px solid var(--bleu);text-align
 @media (min-width:980px){.hero .w{grid-template-columns:1.15fr .85fr;align-items:center;gap:56px;padding-block:84px 100px}}
 .hero h1{font:400 clamp(38px,7.4vw,78px)/1 var(--display);color:var(--bleu);letter-spacing:-.01em;margin:0 0 24px}
 .hero h1 .r{color:var(--rouge)}
+.rot{display:inline-grid;vertical-align:bottom}
+.rot span{grid-area:1/1;color:var(--rouge);opacity:0;transform:translateY(.4em);transition:opacity .45s,transform .45s}
+.rot span.on{opacity:1;transform:none}
 .hero .lead{max-width:33em;margin-bottom:30px;color:var(--encre)}
 .reass{display:flex;flex-wrap:wrap;gap:6px 18px;font:600 15px var(--sans);color:var(--muted);margin:18px 0 0;padding:0;list-style:none}
 .reass li::before{content:"✓ ";color:var(--vert);font-weight:800}
@@ -284,7 +287,7 @@ footer img{width:150px;height:auto;display:block}
     <div class="w">
       <div>
         <p class="kick">Conseil métier, outillé par l'IA</p>
-        <h1 id="titre">Votre <span class="r">métier</span> d'abord.<br>L'IA ensuite.</h1>
+        <h1 id="titre">L'IA au travail dans votre <span class="rot" aria-hidden="true"><span class="on">finance.</span><span>commercial.</span><span>pilotage.</span><span>administratif.</span><span>RH.</span></span><span class="sr" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">organisation.</span></h1>
         <p class="lead">Reportings, relances, saisies, comptes rendus : l'IA peut en alléger une bonne partie. Nous repérons où, installons les bons outils et formons vos équipes, pour qu'elles gagnent du temps et se concentrent sur ce qui compte.</p>
         <div class="ctarow"><a class="btn p" href="#contact" data-track="hero_rdv" data-prefill="rdv">Réserver 30 min offertes <span class="arr" aria-hidden="true">→</span></a><a class="btn s" href="#methode">Voir la méthode</a></div>
         <ul class="reass"><li>Gratuit et sans engagement</li><li>3 pistes concrètes par écrit</li><li>Un associé en face de vous</li></ul>
@@ -307,8 +310,8 @@ footer img{width:150px;height:auto;display:block}
   <div class="marq" aria-label="Nos parcours et nos références">
     <p>Nos parcours et nos références</p>
     <div class="track">
-      <span class="lg">Direct Lemon</span><span class="lg">Jacques Bianchi</span><span class="lg">Merci Régis</span><span>Hermès</span><span class="logo"><img src="logos/bpifrance.svg" width="119" height="34" alt="Bpifrance" loading="lazy"></span><span class="logo"><img src="logos/prisma.svg" width="129" height="44" alt="Prisma Media" loading="lazy"></span><span>Unilabs</span><span class="logo"><img src="logos/pwc.svg" width="99" height="48" alt="PwC" loading="lazy"></span><span>June Partners</span><span>Mikkeller</span><span class="logo"><img src="logos/stationf.svg" width="123" height="22" alt="Station F" loading="lazy"></span>
-      <span class="lg dup" aria-hidden="true">Direct Lemon</span><span class="lg dup" aria-hidden="true">Jacques Bianchi</span><span class="lg dup" aria-hidden="true">Merci Régis</span><span class="dup" aria-hidden="true">Hermès</span><span class="logo dup" aria-hidden="true"><img src="logos/bpifrance.svg" width="119" height="34" alt="" loading="lazy"></span><span class="logo dup" aria-hidden="true"><img src="logos/prisma.svg" width="129" height="44" alt="" loading="lazy"></span><span class="dup" aria-hidden="true">Unilabs</span><span class="logo dup" aria-hidden="true"><img src="logos/pwc.svg" width="99" height="48" alt="" loading="lazy"></span><span class="dup" aria-hidden="true">June Partners</span><span class="dup" aria-hidden="true">Mikkeller</span><span class="logo dup" aria-hidden="true"><img src="logos/stationf.svg" width="123" height="22" alt="" loading="lazy"></span>
+      <span class="logo"><img src="logos/directlemon.png" width="229" height="16" alt="Direct Lemon" loading="lazy"></span><span class="lg">Jacques Bianchi</span><span class="logo"><img src="logos/merciregis.png" width="177" height="34" alt="Merci Régis" loading="lazy"></span><span>Hermès</span><span class="logo"><img src="logos/bpifrance.svg" width="119" height="34" alt="Bpifrance" loading="lazy"></span><span class="logo"><img src="logos/prisma.svg" width="129" height="44" alt="Prisma Media" loading="lazy"></span><span class="logo"><img src="logos/unilabs.png" width="135" height="44" alt="Unilabs" loading="lazy"></span><span class="logo"><img src="logos/pwc.svg" width="99" height="48" alt="PwC" loading="lazy"></span><span>June Partners</span><span class="logo"><img src="logos/mikkeller.png" width="188" height="24" alt="Mikkeller" loading="lazy"></span><span class="logo"><img src="logos/stationf.svg" width="123" height="22" alt="Station F" loading="lazy"></span>
+      <span class="logo dup" aria-hidden="true"><img src="logos/directlemon.png" width="229" height="16" alt="" loading="lazy"></span><span class="lg dup" aria-hidden="true">Jacques Bianchi</span><span class="logo dup" aria-hidden="true"><img src="logos/merciregis.png" width="177" height="34" alt="" loading="lazy"></span><span class="dup" aria-hidden="true">Hermès</span><span class="logo dup" aria-hidden="true"><img src="logos/bpifrance.svg" width="119" height="34" alt="" loading="lazy"></span><span class="logo dup" aria-hidden="true"><img src="logos/prisma.svg" width="129" height="44" alt="" loading="lazy"></span><span class="logo dup" aria-hidden="true"><img src="logos/unilabs.png" width="135" height="44" alt="" loading="lazy"></span><span class="logo dup" aria-hidden="true"><img src="logos/pwc.svg" width="99" height="48" alt="" loading="lazy"></span><span class="dup" aria-hidden="true">June Partners</span><span class="logo dup" aria-hidden="true"><img src="logos/mikkeller.png" width="188" height="24" alt="" loading="lazy"></span><span class="logo dup" aria-hidden="true"><img src="logos/stationf.svg" width="123" height="22" alt="" loading="lazy"></span>
     </div>
   </div>
 
@@ -502,6 +505,10 @@ footer img{width:150px;height:auto;display:block}
   addEventListener("scroll",function(){top.classList.toggle("scrolled",scrollY>8)},{passive:true});
 
   var still=matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  // Mot qui change dans le grand titre
+  var words=document.querySelectorAll(".rot span"),k=0;
+  if(!still&&words.length)setInterval(function(){words[k].classList.remove("on");k=(k+1)%words.length;words[k].classList.add("on")},2200);
 
   // Carte : les tâches se cochent une à une, en boucle
   var items=[].slice.call(document.querySelectorAll("#tasks li"));
