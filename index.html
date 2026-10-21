@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Conseil en intelligence artificielle appliquée aux organisations : audit des processus automatisables, recommandation à la direction, déploiement d'outils et formation des équipes. Finance, gestion, commercial, administratif. Paris.">
+<meta name="description" content="Conseil en IA pour les organisations : nous repérons les tâches à automatiser, déployons les bons outils sur un pilote mesuré et formons vos équipes. Finance, gestion, commercial, administratif. Paris.">
 <link rel="canonical" href="https://bulletin-ia.fr/">
 <meta name="robots" content="index,follow">
 <meta name="theme-color" content="#1d3b72">
@@ -12,29 +12,29 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="fr_FR">
 <meta property="og:site_name" content="Bulletin IA">
-<meta property="og:title" content="Bulletin IA · L'IA au service des processus et du pilotage">
-<meta property="og:description" content="Nous aidons les organisations à automatiser les tâches récurrentes, fiabiliser leurs données et accélérer la prise de décision, dans tous leurs métiers.">
+<meta property="og:title" content="Bulletin IA · Moins de tâches répétitives. Des décisions plus rapides.">
+<meta property="og:description" content="Conseil en IA pour les organisations : audit, recommandation à la direction, déploiement sur un pilote mesuré, formation des équipes.">
 <meta property="og:url" content="https://bulletin-ia.fr/">
 <meta property="og:image" content="https://bulletin-ia.fr/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Bulletin IA : l'IA au service de vos processus et de vos décisions">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Bulletin IA · L'IA au service des processus et du pilotage">
-<meta name="twitter:description" content="Diagnostic, recommandation, déploiement d'outils et formation des équipes finance et gestion.">
+<meta name="twitter:title" content="Bulletin IA · Moins de tâches répétitives. Des décisions plus rapides.">
+<meta name="twitter:description" content="Audit, recommandation, déploiement sur un pilote mesuré, formation des équipes.">
 <meta name="twitter:image" content="https://bulletin-ia.fr/og.png">
 <title>Bulletin IA · Conseil en IA pour les organisations</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,700&family=Public+Sans:wght@400;600;700&display=swap">
 <style>
-:root{--paper:#f6f7f9;--card:#ffffff;--ink:#14213a;--muted:#5b6578;--line:#dde2ea;--plaque:#1d3b72;--soft:#eef1f6;
---good:#1f6b43;--good-bg:#e8f4ed;--bad:#b3261e;--focus:#c2410c;
---wrap:1000px;--text:660px;--serif:"Source Serif 4",Georgia,"Times New Roman",serif;--sans:"Public Sans","Segoe UI",Arial,sans-serif}
+:root{--paper:#f6f7f9;--card:#ffffff;--ink:#14213a;--muted:#5b6578;--line:#dde2ea;--plaque:#1d3b72;--soft:#eef1f6;--accent:#c2410c;
+--good:#1f6b43;--good-bg:#e8f4ed;--bad:#b3261e;--focus:#c2410c;--band:#14213a;--band-ink:#ffffff;--band-muted:#b8c3d9;
+--wrap:1080px;--text:660px;--serif:"Source Serif 4",Georgia,"Times New Roman",serif;--sans:"Public Sans","Segoe UI",Arial,sans-serif}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#0f1420;--card:#171e2d;--ink:#e8ecf3;--muted:#9aa5b8;
---line:#2a3447;--plaque:#3d63ad;--soft:#1b2335;--good:#7fd1a2;--good-bg:#173226;--bad:#ff8a80;--focus:#fdba74;color-scheme:dark}}
-:root[data-theme="dark"]{--paper:#0f1420;--card:#171e2d;--ink:#e8ecf3;--muted:#9aa5b8;--line:#2a3447;--plaque:#3d63ad;--soft:#1b2335;
---good:#7fd1a2;--good-bg:#173226;--bad:#ff8a80;--focus:#fdba74;color-scheme:dark}
+--line:#2a3447;--plaque:#6d93dc;--soft:#1b2335;--accent:#fdba74;--good:#7fd1a2;--good-bg:#173226;--bad:#ff8a80;--focus:#fdba74;--band:#0a0e17;color-scheme:dark}}
+:root[data-theme="dark"]{--paper:#0f1420;--card:#171e2d;--ink:#e8ecf3;--muted:#9aa5b8;--line:#2a3447;--plaque:#6d93dc;--soft:#1b2335;
+--accent:#fdba74;--good:#7fd1a2;--good-bg:#173226;--bad:#ff8a80;--focus:#fdba74;--band:#0a0e17;color-scheme:dark}
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
 @media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
@@ -43,12 +43,11 @@ a{color:var(--plaque);text-underline-offset:3px}
 :focus-visible{outline:3px solid var(--focus);outline-offset:2px;border-radius:4px}
 .skip{position:absolute;left:12px;top:-60px;background:var(--card);color:var(--ink);padding:10px 14px;border-radius:6px;z-index:9;font-weight:600}
 .skip:focus{top:12px}
-.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .w{max-width:var(--wrap);margin:0 auto;padding-inline:16px}
 @media (min-width:600px){.w{padding-inline:24px}}
 .t{max-width:var(--text)}
-h1,h2,h3{font-family:var(--serif);text-wrap:balance;letter-spacing:-.01em;line-height:1.15;margin:0}
-h2{font-size:clamp(26px,4.4vw,34px);margin-bottom:14px}
+h1,h2,h3{font-family:var(--serif);text-wrap:balance;letter-spacing:-.01em;line-height:1.12;margin:0}
+h2{font-size:clamp(28px,4.6vw,38px);margin-bottom:14px}
 h3{font-size:20px;margin-bottom:6px}
 p{margin:0 0 14px}
 .top{padding-block:16px;display:flex;justify-content:space-between;align-items:center;gap:12px}
@@ -56,76 +55,147 @@ p{margin:0 0 14px}
 box-shadow:inset 0 0 0 2px var(--plaque),inset 0 0 0 4px #fff;flex:none}
 .plaque small{font:600 8.5px/1.3 var(--sans);letter-spacing:.16em;text-transform:uppercase;opacity:.9}
 .plaque b{font:700 18px/1.15 var(--serif)}
-.top nav{display:flex;align-items:center;gap:6px 18px;font-size:15px}
+.top nav{display:flex;align-items:center;gap:6px 22px;font-size:15px}
 .top nav a{color:var(--muted);text-decoration:none;padding:10px 0}
 .top nav a:hover{color:var(--ink)}
-.top nav .navcta{color:var(--plaque);font-weight:700;border:2px solid var(--plaque);border-radius:6px;padding:9px 12px;white-space:nowrap}
-@media (max-width:719px){.top nav .opt{display:none}}
-.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;font:700 17px/1.2 var(--sans);padding:14px 22px;
+.top nav .navcta{color:#fff;background:var(--plaque);font-weight:700;border-radius:6px;padding:10px 14px;white-space:nowrap}
+@media (max-width:759px){.top nav .opt{display:none}}
+@media (min-width:760px){.top nav .mob{display:none}}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:54px;font:700 17px/1.2 var(--sans);padding:14px 24px;
 border-radius:6px;text-decoration:none;border:2px solid var(--plaque);text-align:center;cursor:pointer}
 .btn.p{background:var(--plaque);color:#fff}
 .btn.s{color:var(--plaque);background:transparent}
-@media (max-width:519px){.btn.p,.btn.s{width:100%}}
-.ctarow{display:flex;flex-wrap:wrap;gap:14px}
-.sec{padding-block:44px;border-top:1px solid var(--line)}
-@media (min-width:720px){.sec{padding-block:60px}}
-.lead{font-size:19px}
-.kick{font:700 13px/1.2 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--plaque);margin:0 0 10px}
+.btn.w2{background:#fff;color:#14213a;border-color:#fff}
+@media (max-width:519px){.btn{width:100%}}
+.ctarow{display:flex;flex-wrap:wrap;gap:12px}
+.sec{padding-block:52px;border-top:1px solid var(--line)}
+@media (min-width:720px){.sec{padding-block:76px}}
+.lead{font-size:19px;color:var(--muted)}
+.kick{font:700 13px/1.2 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin:0 0 12px}
 .note{font-size:14px;color:var(--muted)}
-.hero{padding-block:28px 40px}
-@media (min-width:720px){.hero{padding-block:52px 56px}}
-.hero h1{font-size:clamp(32px,7.2vw,52px);font-weight:700;margin:0 0 18px;max-width:20ch}
-.hero .lead{max-width:36em;margin-bottom:24px}
-.refs{margin:26px 0 0;font-size:15px;color:var(--muted)}
-.refs b{color:var(--ink);font-weight:600}
-.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr))}
-.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px 20px}
+.head2{display:grid;gap:8px;margin-bottom:28px}
+@media (min-width:860px){.head2{grid-template-columns:1fr 1fr;align-items:end;gap:40px}.head2 p{margin:0}}
+/* Haut de page */
+.hero{padding-block:36px 48px}
+@media (min-width:720px){.hero{padding-block:72px 72px}}
+.hero h1{font-size:clamp(38px,7vw,64px);font-weight:700;margin:0 0 22px;max-width:15ch}
+.hero h1 em{font-style:normal;color:var(--plaque)}
+.hero .lead{max-width:34em;margin-bottom:28px;font-size:clamp(18px,2.4vw,21px)}
+.reass{font-size:15px;color:var(--muted);margin:14px 0 0}
+.reass b{color:var(--good)}
+@media (min-width:960px){.hero{display:grid;grid-template-columns:1.35fr 1fr;gap:56px;align-items:center}}
+.path{display:none;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:26px 26px 10px;box-shadow:0 18px 40px -24px rgba(20,33,58,.35)}
+@media (min-width:960px){.path{display:block}}
+.ph{font:700 12px/1.2 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin:0 0 16px}
+.path ol{list-style:none;margin:0;padding:0;counter-reset:p}
+.path li{counter-increment:p;display:grid;grid-template-columns:36px 1fr;gap:2px 14px;padding-bottom:18px;position:relative}
+.path li::before{content:counter(p);grid-row:span 2;width:36px;height:36px;border-radius:50%;background:var(--plaque);color:#fff;font:700 15px/36px var(--sans);text-align:center}
+.path li:not(:last-child)::after{content:"";position:absolute;left:17px;top:40px;bottom:2px;width:2px;background:var(--line)}
+.path b{font:700 18px/1.3 var(--serif)}
+.path span{font-size:15px;color:var(--muted)}
+/* Bandeau de parcours */
+.strip{border-top:1px solid var(--line);padding-block:26px}
+.strip p{font:600 12px/1.3 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:0 0 14px;text-align:center}
+.logos{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;justify-content:center;gap:10px 34px}
+.logos li{font:700 clamp(17px,2.4vw,21px)/1.3 var(--serif);color:var(--muted);letter-spacing:.01em;opacity:.9}
+/* Chiffres */
+.band{background:var(--band);color:var(--band-ink)}
+.band .w{padding-block:48px}
+@media (min-width:720px){.band .w{padding-block:64px}}
+.figs{display:grid;gap:26px;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr))}
+.fig b{display:block;font:700 clamp(40px,6vw,54px)/1 var(--serif);margin-bottom:8px}
+.fig span{color:var(--band-muted);font-size:15px;display:block;max-width:22ch}
+.band .note{color:var(--band-muted);margin:28px 0 0}
+/* Cartes */
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px}
 .card p{margin:0;font-size:16px;color:var(--muted)}
-.card .n{font:700 13px/1 var(--sans);letter-spacing:.08em;color:var(--plaque);margin-bottom:10px;display:block}
-.card ul{margin:8px 0 0;padding-left:18px;font-size:15px;color:var(--muted)}
+.card .n{font:700 12px/1 var(--sans);letter-spacing:.1em;color:var(--accent);margin-bottom:14px;display:block}
+.ic{width:44px;height:44px;border-radius:10px;background:var(--soft);display:grid;place-items:center;margin-bottom:14px;color:var(--plaque)}
+.ic svg{width:22px;height:22px}
+/* Bénéfices */
+.gains{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr))}
+.gain{border-top:3px solid var(--plaque);padding-top:16px}
+.gain h3{font-size:22px}
+.gain p{color:var(--muted);margin:0}
+/* Grille métiers × secteurs */
+.mx{display:grid;gap:18px}
+@media (min-width:860px){.mx{grid-template-columns:1fr 1fr}}
+.mx h3{font:700 13px/1.2 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
+.tags{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.tags li{background:var(--card);border:1px solid var(--line);border-radius:99px;padding:9px 16px;font-size:15px;font-weight:600}
+/* Étapes */
 .steps{list-style:none;margin:0;padding:0;display:grid;gap:12px;counter-reset:s}
-.steps li{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 18px;display:grid;gap:4px 18px;counter-increment:s}
-@media (min-width:720px){.steps li{grid-template-columns:200px 1fr 1fr;align-items:start}}
-.steps b{font:700 18px/1.3 var(--serif)}
-.steps b::before{content:"0" counter(s) " ";color:var(--plaque);font-family:var(--sans);font-size:14px;letter-spacing:.06em}
+.steps li{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px;display:grid;gap:4px 22px;counter-increment:s}
+@media (min-width:760px){.steps li{grid-template-columns:220px 1fr 1fr;align-items:start}}
+.steps b{font:700 19px/1.3 var(--serif)}
+.steps b::before{content:"0" counter(s);display:block;color:var(--accent);font:700 13px/1.6 var(--sans);letter-spacing:.08em}
 .steps span{font-size:15px;color:var(--muted)}
 .steps i{font-style:normal;font-size:15px}
-.steps i::before{content:"Livrable : ";font-weight:600;color:var(--good)}
-.case{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--plaque);border-radius:8px;padding:20px;margin-bottom:16px}
+.steps i::before{content:"Livrable : ";font-weight:700;color:var(--good)}
+/* Formation par niveaux */
+.lvls{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr))}
+.lvl{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px;position:relative;overflow:hidden}
+.lvl::before{content:"";position:absolute;inset:0 0 auto 0;height:5px;background:var(--plaque);opacity:var(--o,1)}
+.lvl .bar{display:flex;gap:4px;margin-bottom:14px}
+.lvl .bar i{width:22px;height:6px;border-radius:3px;background:var(--line)}
+.lvl .bar i.on{background:var(--plaque)}
+.lvl p{color:var(--muted);font-size:16px;margin:0 0 10px}
+.lvl ul{margin:0;padding-left:18px;font-size:15px}
+/* Cas */
+.case{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--plaque);border-radius:10px;padding:22px;margin-bottom:16px}
 .case h3{margin-bottom:4px}
 .case .exp{font-size:15px;color:var(--muted);margin-bottom:12px}
 .case table{width:100%;border-collapse:collapse;font-size:15px}
 .case th{text-align:left;font:600 12px/1.3 var(--sans);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);padding:6px 10px 6px 0;border-bottom:1px solid var(--line)}
 .case td{padding:10px 10px 10px 0;border-bottom:1px solid var(--line);vertical-align:top}
 .case tr:last-child td{border-bottom:0}
-.case td:first-child{font-weight:600;white-space:nowrap}
+.case td:first-child{font-weight:600}
 @media (max-width:599px){.case thead{display:none}.case tr{display:grid;padding-block:8px;border-bottom:1px solid var(--line)}
 .case td{border:0;padding:2px 0}.case td:last-child{color:var(--muted);font-size:14px}.case tr:last-child{border-bottom:0}}
-.team{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr))}
-.faq{max-width:var(--text)}
+/* Équipe */
+.team{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr))}
+.who{display:flex;gap:16px;align-items:center;margin-bottom:12px}
+.ini{width:64px;height:64px;border-radius:50%;display:grid;place-items:center;background:var(--plaque);color:#fff;font:700 26px var(--serif);flex:none}
+.who h3{margin:0}
+.who span{font-size:14px;color:var(--accent);font-weight:700;letter-spacing:.04em}
+.team ul{margin:12px 0 0;padding-left:18px;font-size:15px;color:var(--muted)}
+/* Engagements */
+.eng{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr))}
+.eng div{padding:18px 0 0;border-top:1px solid var(--line)}
+.eng b{display:block;font:700 18px/1.3 var(--serif);margin-bottom:4px}
+.eng p{margin:0;color:var(--muted);font-size:15px}
+/* FAQ */
+.faq{max-width:760px}
 .faq details{border-top:1px solid var(--line)}
 .faq details:last-child{border-bottom:1px solid var(--line)}
-.faq summary{cursor:pointer;font:600 18px/1.4 var(--serif);padding-block:14px;list-style:none;display:flex;justify-content:space-between;gap:12px;min-height:48px}
+.faq summary{cursor:pointer;font:600 18px/1.4 var(--serif);padding-block:16px;list-style:none;display:flex;justify-content:space-between;gap:12px;min-height:48px}
 .faq summary::-webkit-details-marker{display:none}
 .faq summary::after{content:"+";font:400 24px/1 var(--sans);color:var(--plaque)}
 .faq details[open] summary::after{content:"–"}
-.faq details p{margin:0 0 16px}
-.contact{background:var(--card);border:1px solid var(--line);border-top:5px solid var(--plaque);border-radius:10px;padding:22px 18px;max-width:var(--text)}
-@media (min-width:600px){.contact{padding:30px 32px}}
-.contact form{display:grid;gap:16px;margin-top:6px}
+.faq details p{margin:0 0 16px;color:var(--muted)}
+/* Appel final et contact */
+.final{background:var(--band);color:var(--band-ink);border-radius:16px;padding:32px 22px;display:grid;gap:22px}
+@media (min-width:860px){.final{grid-template-columns:1fr 1.1fr;padding:48px;gap:48px;align-items:start}}
+.final h2{color:#fff}
+.final .lead{color:var(--band-muted)}
+.final ul{margin:0 0 8px;padding-left:20px;color:var(--band-ink);display:grid;gap:6px}
+.contact{background:var(--card);color:var(--ink);border-radius:12px;padding:22px 18px}
+@media (min-width:600px){.contact{padding:28px}}
+.contact form{display:grid;gap:14px}
 .field{display:grid;gap:6px}
-.field label{font-weight:700;font-size:16px}
+.field label{font-weight:700;font-size:15px}
 .field label small{font-weight:400;color:var(--muted)}
 .field input,.field textarea{font:17px var(--sans);min-height:50px;padding:12px 14px;border:1px solid #8a94a6;border-radius:6px;background:var(--paper);color:var(--ink);width:100%}
-.field textarea{min-height:120px;line-height:1.45}
+.field textarea{min-height:110px;line-height:1.45}
 .field [aria-invalid="true"]{border-color:var(--bad)}
 .err-msg{color:var(--bad);font-size:14px}
 .err-msg:empty{display:none}
 .done{display:none;background:var(--good-bg);border-radius:8px;padding:16px;margin-top:6px}
 .done.on{display:block}
-.mailrow{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:16px 0 0;font-size:15px}
+.mailrow{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:16px 0 0;font-size:14px;color:var(--muted)}
 .copy{display:inline-flex;align-items:center;font:600 14px var(--sans);border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:6px;padding:10px 12px;min-height:44px;cursor:pointer}
-footer{padding-block:28px 40px;border-top:1px solid var(--line);font:14px/1.6 var(--sans);color:var(--muted)}
+footer{padding-block:28px 40px;font:14px/1.6 var(--sans);color:var(--muted)}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://bulletin-ia.fr/#site","url":"https://bulletin-ia.fr/","name":"Bulletin IA","inLanguage":"fr-FR"},{"@type":"ProfessionalService","@id":"https://bulletin-ia.fr/#org","name":"Bulletin IA","url":"https://bulletin-ia.fr/","description":"Conseil en intelligence artificielle appliquée aux organisations : diagnostic, recommandation, déploiement d'outils et formation des équipes.","areaServed":"FR","address":{"@type":"PostalAddress","addressLocality":"Paris","addressCountry":"FR"},"knowsAbout":["Intelligence artificielle","Contrôle de gestion","Pilotage financier","Automatisation des processus","Reporting","Formation","Relation client"]}]}</script>
 </head>
@@ -134,135 +204,214 @@ footer{padding-block:28px 40px;border-top:1px solid var(--line);font:14px/1.6 va
 <div class="w">
   <header class="top">
     <a class="plaque" href="#contenu" aria-label="Bulletin IA, retour en haut"><small>Conseil · IA &amp; organisations</small><b>Bulletin IA</b></a>
-    <nav aria-label="Navigation principale"><a class="opt" href="#offre">Ce que nous faisons</a><a class="opt" href="#methode">Méthode</a><a class="opt" href="#equipe">Équipe</a><a class="navcta" href="#contact" data-track="nav_contact">Nous écrire</a></nav>
+    <nav aria-label="Navigation principale"><a class="opt" href="#offre">Notre offre</a><a class="opt" href="#methode">Méthode</a><a class="opt" href="#formation">Formation</a><a class="opt" href="#equipe">Équipe</a><a class="navcta" href="#contact" data-track="nav_rdv" data-prefill="rdv"><span class="opt">Prendre rendez-vous</span><span class="mob">Rendez-vous</span></a></nav>
   </header>
-<main id="contenu">
-  <section class="hero" aria-labelledby="titre">
-    <p class="kick">Finance · gestion · commercial · administratif · et au-delà</p>
-    <h1 id="titre">L'IA au service de vos processus et de vos décisions</h1>
-    <p class="lead">Nous aidons les organisations à automatiser les tâches récurrentes, fiabiliser leurs données et accélérer la prise de décision. Nous cadrons les besoins, déployons les outils adaptés et formons vos équipes à des usages concrets de l'IA.</p>
-    <div class="ctarow"><a class="btn p" href="#contact" data-track="hero_contact">Parler de votre projet</a><a class="btn s" href="#methode">Voir la méthode</a></div>
-    <p class="refs"><b>Références issues de nos parcours :</b> Bpifrance · Mikkeller · Unilabs · Hermès Cuirs Précieux</p>
-  </section>
-
-  <section class="sec" id="offre" aria-labelledby="offre-titre">
-    <div class="t"><p class="kick">Ce que nous faisons</p><h2 id="offre-titre">Quatre interventions, de l'audit à l'autonomie des équipes</h2>
-    <p>Nous partons des opérations et des décisions que vos équipes doivent prendre, pas de l'outil à la mode.</p></div>
-    <div class="grid">
-      <div class="card"><span class="n">AUDIT INTERNE</span><h3>Ce qui peut être automatisé</h3><p>Processus de chaque métier, de la finance au commercial en passant par l'administratif : volumes, délais, irritants, outils et licences déjà en place.</p></div>
-      <div class="card"><span class="n">PRÉSENTATION À LA DIRECTION</span><h3>Des choix à valider</h3><p>Usages prioritaires, outils recommandés, coûts complets et critères de succès, présentés à la direction et à la DSI.</p></div>
-      <div class="card"><span class="n">DÉPLOIEMENT D'OUTILS</span><h3>Un pilote qui tourne</h3><p>Configuration, intégration des flux, tests sur cas réels et contrôles, avant toute généralisation.</p></div>
-      <div class="card"><span class="n">FORMATION DES ÉQUIPES</span><h3>Des usages au quotidien</h3><p>Formation pratique sur vos propres tâches, guide d'utilisation et suivi de l'adoption.</p></div>
-    </div>
-  </section>
-
-  <section class="sec" aria-labelledby="dom-titre">
-    <div class="t"><p class="kick">Nos domaines</p><h2 id="dom-titre">Là où l'IA fait gagner du temps sans perdre le contrôle</h2></div>
-    <div class="grid">
-      <div class="card"><h3>Finance et décision</h3><p>Budgets, prévisions, trésorerie et indicateurs de performance.</p></div>
-      <div class="card"><h3>Processus et outils</h3><p>Audit, refonte des reportings et automatisation des flux.</p></div>
-      <div class="card"><h3>Commercial et relation client</h3><p>Suivi des prospects, propositions, relances et réponses aux demandes récurrentes.</p></div>
-      <div class="card"><h3>Équipes et adoption</h3><p>Formation, documentation et conduite du changement.</p></div>
-    </div>
-    <p class="note" style="margin-top:16px">Ces domaines sont des points de départ, pas des limites : le diagnostic part des tâches réelles de votre organisation, quel que soit le service.</p>
-  </section>
-
-  <section class="sec" id="methode" aria-labelledby="methode-titre">
-    <div class="t"><p class="kick">Méthode</p><h2 id="methode-titre">Une intervention en cinq étapes</h2>
-    <p>Comprendre l'existant, faire valider les choix, déployer et rendre les équipes autonomes. Chaque étape aboutit à un livrable concret et à un responsable identifié.</p></div>
-    <ol class="steps">
-      <li><b>Diagnostic</b><span>Processus, outils, licences, données, besoins et niveau des équipes.</span><i>cartographie de l'existant et diagnostic des besoins.</i></li>
-      <li><b>Recommandation</b><span>Prioriser les usages ; choisir les outils selon la valeur, la faisabilité et les coûts.</span><i>usages prioritaires, outils et estimation des coûts.</i></li>
-      <li><b>Validation</b><span>Arrêter le périmètre, le budget, les accès et les critères de succès avec la direction.</span><i>feuille de route validée avec la direction et la DSI.</i></li>
-      <li><b>Déploiement</b><span>Configurer les outils, intégrer les flux, tester un pilote et traiter les exceptions.</span><i>processus opérationnel et recette métier.</i></li>
-      <li><b>Appropriation</b><span>Former sur les cas réels, documenter, mesurer les usages et les résultats.</span><i>équipes formées, guide et bilan du pilote.</i></li>
-    </ol>
-  </section>
-
-  <section class="sec" id="exemples" aria-labelledby="ex-titre">
-    <div class="t"><p class="kick">Exemples d'application</p><h2 id="ex-titre">Ce que nous proposerions sur des terrains que nous connaissons</h2>
-    <p class="note">Ces exemples partent d'expériences réelles de nos parcours. Les applications d'IA décrites sont des propositions, pas des projets déjà livrés ; les gains se mesurent lors d'un pilote.</p></div>
-    <div class="case">
-      <h3>Pilotage d'un établissement (Mikkeller)</h3>
-      <p class="exp">Expérience mobilisée : mise en place et automatisation des procédures de gestion, du reporting groupe, des clôtures et des inventaires.</p>
-      <table><thead><tr><th>Processus</th><th>Automatisation et assistance par l'IA</th><th>Indicateurs avant / après</th></tr></thead><tbody>
-        <tr><td>Reporting hebdomadaire</td><td>Consolider les ventes, calculer les écarts, faire rédiger un premier commentaire.</td><td>Temps de préparation, corrections, délai de diffusion</td></tr>
-        <tr><td>Stocks et achats</td><td>Rapprocher ventes et inventaires, signaler les écarts, préparer une commande à valider.</td><td>Temps d'inventaire, écarts de stock, ruptures</td></tr>
-        <tr><td>Clôture</td><td>Collecter et classer les pièces, suivre les manquants, préparer une synthèse à relire.</td><td>Pièces manquantes, temps de clôture, reprises</td></tr>
-      </tbody></table>
-    </div>
-    <div class="case">
-      <h3>Pilotage d'un budget Digital de 66 M€ (Bpifrance)</h3>
-      <p class="exp">Expérience mobilisée : appui au pilotage budgétaire de la Direction du Digital.</p>
-      <table><thead><tr><th>Processus</th><th>Automatisation et assistance par l'IA</th><th>Indicateurs avant / après</th></tr></thead><tbody>
-        <tr><td>Budget et prévisions</td><td>Consolider réalisé, engagé et prévisionnel, calculer les écarts, préparer un commentaire explicatif.</td><td>Temps de consolidation, corrections, délai du reporting</td></tr>
-        <tr><td>Dépenses</td><td>Rapprocher commandes, consommations et imputations, faire remonter les incohérences.</td><td>Anomalies détectées, temps de résolution</td></tr>
-        <tr><td>Comités de pilotage</td><td>Préparer un support de synthèse en reliant chaque chiffre à sa source.</td><td>Temps de préparation, demandes de reprise</td></tr>
-      </tbody></table>
-    </div>
-    <p class="note">Les calculs et rapprochements suivent des règles contrôlées. L'IA aide à synthétiser et à rédiger ; le métier valide les chiffres et la direction garde les arbitrages.</p>
-  </section>
-
-  <section class="sec" aria-labelledby="pilote-titre">
-    <div class="t"><p class="kick">Pour commencer</p><h2 id="pilote-titre">Une première mission centrée sur un pilote</h2>
-    <p>Nous définissons un périmètre limité, mesurons les résultats, puis accompagnons le déploiement. Le calendrier et le budget sont précisés après le diagnostic.</p></div>
-    <div class="grid">
-      <div class="card"><span class="n">1</span><h3>Diagnostic ciblé</h3><p>Cartographie, besoins des équipes, usages prioritaires, choix d'outils et estimation des coûts.</p></div>
-      <div class="card"><span class="n">2</span><h3>Pilote sur un processus</h3><p>Flux configuré, tests sur cas réels, mesure avant / après et bilan économique.</p></div>
-      <div class="card"><span class="n">3</span><h3>Déploiement et formation</h3><p>Extension des usages validés, guide pratique, formation et suivi de l'adoption.</p></div>
-    </div>
-    <p class="note" style="margin-top:16px">Critères de succès fixés avant le lancement : temps de traitement, taux de reprise, délai de reporting, adoption. La valeur du temps gagné est comparée au coût complet (licences, intégration, suivi).</p>
-  </section>
-
-  <section class="sec" id="equipe" aria-labelledby="equipe-titre">
-    <div class="t"><p class="kick">Qui sommes-nous</p><h2 id="equipe-titre">Une structure de conseil à la croisée du business, de la finance et de l'IA</h2></div>
-    <div class="team">
-      <div class="card"><h3>Finance &amp; opérations</h3><p><b>Marie.</b> Pilotage financier et aide à la décision, structuration et automatisation des processus, refonte d'outils de contrôle de gestion, conduite du changement. Contrôle financier chez Hermès Cuirs Précieux, pilotage budgétaire à Bpifrance, fondatrice de Mikkeller Bar Paris.</p></div>
-      <div class="card"><h3>Stratégie &amp; développement</h3><p><b>Aloïs.</b> Vision business et analyse économique, priorisation des projets et création de valeur. Fusions-acquisitions et stratégie dans un grand groupe média, direction d'une business unit, conseil en corporate finance, fondateur d'une start-up incubée à Station F.</p></div>
-    </div>
-    <p class="note" style="margin-top:16px">Nous formons aussi une équipe de consultants aux usages de l'IA, pour intervenir à leur tour chez nos clients. Vous êtes consultant et cela vous intéresse&nbsp;? <a href="#contact">Écrivez-nous</a>.</p>
-  </section>
-
-  <section class="sec" id="questions" aria-labelledby="faq-titre">
-    <h2 id="faq-titre">Vos questions</h2>
-    <div class="faq">
-      <details><summary>Faut-il déjà avoir des outils d'IA ?</summary><p>Non. Le diagnostic recense ce que vous avez déjà (logiciels, licences, compétences) ; souvent, une partie des besoins se couvre avec l'existant.</p></details>
-      <details><summary>Nos données restent-elles chez nous ?</summary><p>Les accès, les outils et les données utilisées sont définis avec votre DSI avant le pilote. Nous travaillons uniquement sur des données autorisées.</p></details>
-      <details><summary>Combien de temps dure une première mission ?</summary><p>Elle commence par un diagnostic ciblé, puis un pilote sur un seul processus. La durée et le budget sont fixés ensemble après le diagnostic, en fonction du périmètre.</p></details>
-      <details><summary>Promettez-vous un gain chiffré ?</summary><p>Non, pas avant de l'avoir mesuré. Nous fixons une mesure initiale avec vous, puis nous comparons après le pilote, en distinguant le temps libéré de l'économie réellement obtenue.</p></details>
-      <details><summary>Formez-vous des équipes sans projet de déploiement ?</summary><p>Oui. La formation peut être prise seule, du premier niveau (comprendre et bien utiliser un assistant IA) jusqu'à l'automatisation de tâches complètes. Elle porte sur les tâches quotidiennes de vos équipes, avec leurs propres cas.</p></details>
-    </div>
-  </section>
-
-  <section class="sec" id="contact" aria-labelledby="contact-titre">
-    <div class="contact">
-      <h2 id="contact-titre">Parler de votre projet</h2>
-      <p>Décrivez en quelques lignes votre organisation et les tâches qui vous prennent le plus de temps. Nous vous répondons sous deux jours ouvrés.</p>
-      <form id="contact-form" novalidate data-endpoint="formsubmit:589f7b060f78c7768cffe88db98467a3">
-        <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
-        <div class="field"><label for="f-nom">Votre nom</label>
-          <input id="f-nom" name="nom" autocomplete="name" required aria-describedby="e-nom"><span class="err-msg" id="e-nom"></span></div>
-        <div class="field"><label for="f-org">Organisation <small>(facultatif)</small></label>
-          <input id="f-org" name="organisation" autocomplete="organization"></div>
-        <div class="field"><label for="f-mail">Votre e-mail</label>
-          <input id="f-mail" name="email" type="email" autocomplete="email" inputmode="email" required aria-describedby="e-mail"><span class="err-msg" id="e-mail"></span></div>
-        <div class="field"><label for="f-msg">Votre besoin</label>
-          <textarea id="f-msg" name="message" required aria-describedby="e-msg"></textarea><span class="err-msg" id="e-msg"></span></div>
-        <button class="btn p" type="submit" data-track="contact_envoi">Envoyer</button>
-      </form>
-      <div class="done" id="contact-done" role="status" tabindex="-1"><p id="done-txt" style="margin:0"></p></div>
-      <p class="mailrow">Vous préférez écrire directement&nbsp;? <span class="mail" data-u="ineillag.ed.erdnaxela" data-d="moc.liamg">alexandre.de.gallieni [arobase] gmail [point] com</span> <button type="button" class="copy" id="copy-mail">Copier l'adresse</button></p>
-    </div>
-  </section>
-</main>
 </div>
+<main id="contenu">
+  <div class="w">
+    <section class="hero" aria-labelledby="titre">
+      <div>
+      <p class="kick">Conseil en IA pour les organisations</p>
+      <h1 id="titre">Moins de tâches répétitives. <em>Des décisions plus rapides.</em></h1>
+      <p class="lead">Nous repérons ce que l'IA peut vraiment faire dans votre organisation, nous le mettons en place sur un pilote mesuré, et nous formons vos équipes pour qu'elles s'en servent chaque jour.</p>
+      <div class="ctarow"><a class="btn p" href="#contact" data-track="hero_rdv" data-prefill="rdv">Réserver un échange de 30 min</a><a class="btn s" href="#methode">Voir notre méthode</a></div>
+      <p class="reass"><b>✓</b> Gratuit et sans engagement · <b>✓</b> Nous repartons avec vos 3 premières pistes</p>
+      </div>
+      <aside class="path" aria-label="Notre parcours d'intervention">
+        <p class="ph">Votre parcours avec nous</p>
+        <ol>
+          <li><b>Audit</b><span>Les tâches qui prennent du temps, service par service</span></li>
+          <li><b>Décision</b><span>Les usages prioritaires, validés par la direction</span></li>
+          <li><b>Pilote</b><span>Un processus outillé, mesuré avant / après</span></li>
+          <li><b>Autonomie</b><span>Des équipes formées sur leurs propres cas</span></li>
+        </ol>
+      </aside>
+    </section>
+  </div>
+
+  <div class="strip">
+    <div class="w">
+      <p>Nos parcours : là où nous avons piloté, décidé, transformé</p>
+      <ul class="logos"><li>Hermès</li><li>Bpifrance</li><li>Prisma Media</li><li>PwC</li><li>June Partners</li><li>Groupe Bel</li><li>Mikkeller</li><li>Station F</li></ul>
+    </div>
+  </div>
+
+  <section class="band" aria-label="Nos parcours en chiffres">
+    <div class="w">
+      <div class="figs">
+        <div class="fig"><b>20 ans</b><span>d'expérience cumulée en finance, stratégie et fusions-acquisitions</span></div>
+        <div class="fig"><b>66 M€</b><span>de budget digital piloté au quotidien</span></div>
+        <div class="fig"><b>17 filiales</b><span>consolidées en contrôle financier, pour 250 M€ de chiffre d'affaires</span></div>
+        <div class="fig"><b>2</b><span>entreprises fondées et dirigées : nous connaissons les contraintes du terrain</span></div>
+      </div>
+      <p class="note">Ces chiffres et les noms ci-dessus viennent des parcours de nos associés. Ce ne sont pas des références de missions d'IA.</p>
+    </div>
+  </section>
+
+  <div class="w">
+    <section class="sec" style="border-top:0" aria-labelledby="gains-titre">
+      <div class="head2"><div><p class="kick">Ce que vous y gagnez</p><h2 id="gains-titre">L'IA n'est pas un sujet techno. C'est du temps et de la clarté.</h2></div>
+      <p class="lead">Vos équipes passent des heures à consolider, relancer, recopier et mettre en forme. C'est là que l'IA fait gagner, à condition de partir du métier.</p></div>
+      <div class="gains">
+        <div class="gain"><h3>Du temps rendu aux équipes</h3><p>Les reportings, rapprochements, relances et premiers jets de documents se préparent seuls. Vos équipes relisent et décident.</p></div>
+        <div class="gain"><h3>Des chiffres fiables, plus vite</h3><p>Moins de ressaisies, des écarts signalés automatiquement, chaque chiffre relié à sa source.</p></div>
+        <div class="gain"><h3>Des équipes autonomes</h3><p>Formées sur leurs propres tâches, elles savent quoi demander à l'IA et quoi vérifier. Sans dépendre de nous.</p></div>
+      </div>
+    </section>
+
+    <section class="sec" id="offre" aria-labelledby="offre-titre">
+      <div class="head2"><div><p class="kick">Notre offre</p><h2 id="offre-titre">De l'audit à l'autonomie, en quatre temps</h2></div>
+      <p class="lead">Vous pouvez nous confier tout le parcours ou une seule étape.</p></div>
+      <div class="grid">
+        <div class="card"><div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></div><span class="n">01 · AUDIT</span><h3>Ce qui peut être automatisé</h3><p>Nous observons les tâches réelles de chaque service : volumes, délais, irritants, outils et licences déjà payés.</p></div>
+        <div class="card"><div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 19V9M10 19V5M16 19v-7M22 19H2"/></svg></div><span class="n">02 · DIRECTION</span><h3>Des choix clairs à valider</h3><p>Usages prioritaires, outils, coût complet et critères de succès, présentés à la direction et à la DSI.</p></div>
+        <div class="card"><div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M5.6 18.4l2.8-2.8M15.6 8.4l2.8-2.8"/></svg></div><span class="n">03 · DÉPLOIEMENT</span><h3>Un pilote qui tourne</h3><p>Outils configurés, flux intégrés, tests sur vos cas réels et mesure avant / après, avant toute généralisation.</p></div>
+        <div class="card"><div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c3 2 9 2 12 0v-5"/></svg></div><span class="n">04 · FORMATION</span><h3>Des usages au quotidien</h3><p>Formation pratique par niveau, guide d'utilisation et suivi de l'adoption dans les semaines qui suivent.</p></div>
+      </div>
+    </section>
+
+    <section class="sec" aria-labelledby="mx-titre">
+      <div class="head2"><div><p class="kick">Pour qui</p><h2 id="mx-titre">Tous vos métiers, quel que soit votre secteur</h2></div>
+      <p class="lead">Nous ne nous limitons pas à un pôle : le diagnostic part des tâches de votre organisation, service par service.</p></div>
+      <div class="mx">
+        <div><h3>Par métier</h3><ul class="tags"><li>Finance &amp; trésorerie</li><li>Contrôle de gestion</li><li>Direction &amp; pilotage</li><li>Commercial &amp; relation client</li><li>Marketing &amp; communication</li><li>Achats &amp; opérations</li><li>Administratif &amp; juridique</li><li>RH</li></ul></div>
+        <div><h3>Par secteur</h3><ul class="tags"><li>PME &amp; ETI</li><li>Luxe &amp; mode</li><li>Médias</li><li>Restauration &amp; hôtellerie</li><li>Commerce &amp; e-commerce</li><li>Services financiers</li><li>Immobilier &amp; BTP</li><li>Fonds et participations</li></ul></div>
+      </div>
+    </section>
+
+    <section class="sec" id="methode" aria-labelledby="methode-titre">
+      <div class="head2"><div><p class="kick">Méthode</p><h2 id="methode-titre">Cinq étapes, un livrable à chacune</h2></div>
+      <p class="lead">Comprendre l'existant, faire valider les choix, déployer, puis rendre les équipes autonomes. Chaque étape a un responsable identifié.</p></div>
+      <ol class="steps">
+        <li><b>Diagnostic</b><span>Processus, outils, licences, données, besoins et niveau des équipes.</span><i>cartographie de l'existant et des besoins.</i></li>
+        <li><b>Recommandation</b><span>Prioriser les usages ; choisir les outils selon la valeur, la faisabilité et le coût.</span><i>usages prioritaires, outils, estimation des coûts.</i></li>
+        <li><b>Validation</b><span>Arrêter périmètre, budget, accès et critères de succès avec la direction.</span><i>feuille de route validée avec la direction et la DSI.</i></li>
+        <li><b>Déploiement</b><span>Configurer, intégrer les flux, tester un pilote, traiter les exceptions.</span><i>processus opérationnel et recette métier.</i></li>
+        <li><b>Appropriation</b><span>Former sur les cas réels, documenter, mesurer les usages et les résultats.</span><i>équipes formées, guide et bilan du pilote.</i></li>
+      </ol>
+    </section>
+
+    <section class="sec" id="formation" aria-labelledby="form-titre">
+      <div class="head2"><div><p class="kick">Formation</p><h2 id="form-titre">Trois niveaux, sur vos propres cas</h2></div>
+      <p class="lead">Pas de cours théorique : chaque séance part des tâches que vos équipes font déjà. La formation peut se prendre seule, sans projet de déploiement.</p></div>
+      <div class="lvls">
+        <div class="lvl" style="--o:.45"><div class="bar" aria-hidden="true"><i class="on"></i><i></i><i></i></div><h3>Découvrir</h3><p>Comprendre ce que l'IA sait faire, et ce qu'elle ne sait pas faire.</p><ul><li>Bien formuler une demande</li><li>Vérifier une réponse</li><li>Règles de confidentialité</li></ul></div>
+        <div class="lvl" style="--o:.7"><div class="bar" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i></div><h3>Pratiquer</h3><p>Intégrer l'IA aux tâches de chaque jour.</p><ul><li>Synthèses, comptes rendus, e-mails</li><li>Analyse de tableaux et d'écarts</li><li>Assistants adaptés à votre métier</li></ul></div>
+        <div class="lvl"><div class="bar" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i></div><h3>Automatiser</h3><p>Enchaîner les tâches sans intervention.</p><ul><li>Reportings qui se préparent seuls</li><li>Relances et rapprochements</li><li>Contrôles et validation humaine</li></ul></div>
+      </div>
+    </section>
+
+    <section class="sec" id="exemples" aria-labelledby="ex-titre">
+      <div class="head2"><div><p class="kick">Exemples d'application</p><h2 id="ex-titre">Sur des terrains que nous connaissons de l'intérieur</h2></div>
+      <p class="lead">Deux situations vécues par nos associés, et ce que nous y proposerions aujourd'hui. Les gains se mesurent lors d'un pilote.</p></div>
+      <div class="case">
+        <h3>Gestion d'un bar-restaurant parisien</h3>
+        <p class="exp">Vécu : création de l'établissement, puis automatisation des procédures de gestion, du reporting groupe, des clôtures et des inventaires.</p>
+        <table><thead><tr><th>Processus</th><th>Ce que l'IA prend en charge</th><th>Ce que l'on mesure</th></tr></thead><tbody>
+          <tr><td>Reporting hebdomadaire</td><td>Consolider les ventes, calculer les écarts, rédiger un premier commentaire.</td><td>Temps de préparation, corrections, délai de diffusion</td></tr>
+          <tr><td>Stocks et achats</td><td>Rapprocher ventes et inventaires, signaler les écarts, préparer la commande à valider.</td><td>Temps d'inventaire, écarts, ruptures</td></tr>
+          <tr><td>Clôture</td><td>Collecter et classer les pièces, suivre les manquants, préparer la synthèse.</td><td>Pièces manquantes, temps de clôture</td></tr>
+        </tbody></table>
+      </div>
+      <div class="case">
+        <h3>Pilotage d'un budget de 66 M€ dans une grande institution</h3>
+        <p class="exp">Vécu : appui au pilotage budgétaire d'une direction du Digital.</p>
+        <table><thead><tr><th>Processus</th><th>Ce que l'IA prend en charge</th><th>Ce que l'on mesure</th></tr></thead><tbody>
+          <tr><td>Budget et prévisions</td><td>Consolider réalisé, engagé et prévisionnel, calculer les écarts, préparer le commentaire.</td><td>Temps de consolidation, délai du reporting</td></tr>
+          <tr><td>Dépenses</td><td>Rapprocher commandes, consommations et imputations, faire remonter les incohérences.</td><td>Anomalies détectées, temps de résolution</td></tr>
+          <tr><td>Comités de pilotage</td><td>Préparer le support de synthèse en reliant chaque chiffre à sa source.</td><td>Temps de préparation, demandes de reprise</td></tr>
+        </tbody></table>
+      </div>
+    </section>
+
+    <section class="sec" aria-labelledby="pilote-titre">
+      <div class="head2"><div><p class="kick">Pour commencer</p><h2 id="pilote-titre">Une première mission courte, centrée sur un pilote</h2></div>
+      <p class="lead">Un périmètre limité, des résultats mesurés, puis le déploiement. Calendrier et budget sont fixés après le diagnostic.</p></div>
+      <div class="grid">
+        <div class="card"><span class="n">ÉTAPE 1</span><h3>Diagnostic ciblé</h3><p>Cartographie, besoins des équipes, usages prioritaires, outils et coûts.</p></div>
+        <div class="card"><span class="n">ÉTAPE 2</span><h3>Pilote sur un processus</h3><p>Flux configuré, tests sur cas réels, mesure avant / après, bilan économique.</p></div>
+        <div class="card"><span class="n">ÉTAPE 3</span><h3>Déploiement et formation</h3><p>Extension des usages validés, guide pratique, suivi de l'adoption.</p></div>
+      </div>
+    </section>
+
+    <section class="sec" id="equipe" aria-labelledby="equipe-titre">
+      <div class="head2"><div><p class="kick">Qui sommes-nous</p><h2 id="equipe-titre">Deux associés, à la croisée du business, de la finance et de l'IA</h2></div>
+      <p class="lead">Nous avons tenu les budgets, les clôtures et les comités que nous proposons d'alléger. Nous savons ce qu'une équipe peut absorber.</p></div>
+      <div class="team">
+        <div class="card"><div class="who"><div class="ini" aria-hidden="true">M</div><div><h3>Marie</h3><span>FINANCE &amp; OPÉRATIONS</span></div></div>
+          <p>Pilotage financier, structuration et automatisation des processus, refonte d'outils de contrôle de gestion, conduite du changement.</p>
+          <ul><li>Responsable contrôle financier chez Hermès Cuirs Précieux</li><li>Pilotage du budget Digital de Bpifrance</li><li>Fondatrice et dirigeante de Mikkeller Bar Paris</li></ul></div>
+        <div class="card"><div class="who"><div class="ini" aria-hidden="true">A</div><div><h3>Aloïs</h3><span>STRATÉGIE &amp; DÉVELOPPEMENT</span></div></div>
+          <p>Vision business et analyse économique, priorisation des projets, création de valeur.</p>
+          <ul><li>Fusions-acquisitions et stratégie, puis direction d'une business unit chez Prisma Media</li><li>Conseil en corporate finance chez June Partners</li><li>Fondateur d'une start-up incubée à Station F</li></ul></div>
+      </div>
+      <p class="note" style="margin-top:18px">Nous formons aussi une équipe de consultants aux usages de l'IA, pour intervenir à leur tour chez nos clients. Vous êtes consultant indépendant et cela vous intéresse&nbsp;? <a href="#contact" data-prefill="consultant">Rejoignez-nous</a>.</p>
+    </section>
+
+    <section class="sec" aria-labelledby="eng-titre">
+      <p class="kick">Nos engagements</p><h2 id="eng-titre">Ce que vous pouvez attendre de nous</h2>
+      <div class="eng">
+        <div><b>Aucun gain promis avant mesure</b><p>Nous mesurons avant, puis après le pilote, et nous distinguons le temps libéré des économies réelles.</p></div>
+        <div><b>L'IA assiste, le métier décide</b><p>Les calculs suivent des règles contrôlées. Chaque chiffre et chaque commande sont validés par un responsable.</p></div>
+        <div><b>Vos données restent maîtrisées</b><p>Accès et outils sont définis avec votre DSI. Nous travaillons uniquement sur des données autorisées.</p></div>
+        <div><b>Vous devenez autonomes</b><p>Guide, formation et passation : l'objectif est que vos équipes n'aient plus besoin de nous.</p></div>
+      </div>
+    </section>
+
+    <section class="sec" id="questions" aria-labelledby="faq-titre">
+      <h2 id="faq-titre">Vos questions</h2>
+      <div class="faq">
+        <details><summary>Comment se passe l'échange de 30 minutes ?</summary><p>En visio ou par téléphone. Vous nous décrivez votre organisation et les tâches qui prennent le plus de temps ; nous repartons avec trois pistes concrètes que nous vous envoyons par écrit. C'est gratuit et sans engagement.</p></details>
+        <details><summary>Faut-il déjà avoir des outils d'IA ?</summary><p>Non. Le diagnostic recense ce que vous avez déjà (logiciels, licences, compétences) ; souvent, une partie des besoins se couvre avec l'existant.</p></details>
+        <details><summary>Nos données restent-elles chez nous ?</summary><p>Les accès, les outils et les données utilisées sont définis avec votre DSI avant le pilote. Nous travaillons uniquement sur des données autorisées.</p></details>
+        <details><summary>Combien de temps dure une première mission ?</summary><p>Elle commence par un diagnostic ciblé, puis un pilote sur un seul processus. La durée et le budget sont fixés ensemble après le diagnostic.</p></details>
+        <details><summary>Promettez-vous un gain chiffré ?</summary><p>Pas avant de l'avoir mesuré. Nous fixons une mesure initiale avec vous, puis nous comparons après le pilote.</p></details>
+        <details><summary>Intervenez-vous dans les petites structures ?</summary><p>Oui. Une PME a souvent les gains les plus rapides : peu de personnes, beaucoup de tâches répétées, et des décisions qui se prennent vite.</p></details>
+      </div>
+    </section>
+
+    <section class="sec" id="contact" aria-labelledby="contact-titre" style="border-top:0">
+      <div class="final">
+        <div>
+          <p class="kick">Premier échange</p>
+          <h2 id="contact-titre">30 minutes pour trouver vos premiers gains</h2>
+          <p class="lead">Racontez-nous en quelques lignes votre organisation et ce qui vous prend du temps. Nous vous proposons un créneau sous deux jours ouvrés.</p>
+          <ul><li>Gratuit et sans engagement</li><li>Trois pistes concrètes envoyées par écrit</li><li>Un interlocuteur associé, pas un commercial</li></ul>
+        </div>
+        <div class="contact">
+          <form id="contact-form" novalidate data-endpoint="formsubmit:589f7b060f78c7768cffe88db98467a3">
+            <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
+            <div class="field"><label for="f-nom">Votre nom</label>
+              <input id="f-nom" name="nom" autocomplete="name" required aria-describedby="e-nom"><span class="err-msg" id="e-nom"></span></div>
+            <div class="field"><label for="f-org">Organisation <small>(facultatif)</small></label>
+              <input id="f-org" name="organisation" autocomplete="organization"></div>
+            <div class="field"><label for="f-mail">Votre e-mail</label>
+              <input id="f-mail" name="email" type="email" autocomplete="email" inputmode="email" required aria-describedby="e-mail"><span class="err-msg" id="e-mail"></span></div>
+            <div class="field"><label for="f-msg">Votre besoin</label>
+              <textarea id="f-msg" name="message" required aria-describedby="e-msg" placeholder="Ex. : notre reporting mensuel prend 3 jours à l'équipe finance."></textarea><span class="err-msg" id="e-msg"></span></div>
+            <button class="btn p" type="submit" data-track="contact_envoi">Demander mon créneau</button>
+          </form>
+          <div class="done" id="contact-done" role="status" tabindex="-1"><p id="done-txt" style="margin:0"></p></div>
+          <p class="mailrow">Ou par e-mail&nbsp;: <span class="mail" data-u="ineillag.ed.erdnaxela" data-d="moc.liamg">alexandre.de.gallieni [arobase] gmail [point] com</span> <button type="button" class="copy" id="copy-mail">Copier</button></p>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
 
 <footer>
-  <div class="w">
-    <div>Bulletin IA · Conseil en IA pour les organisations · Paris</div>
-  </div>
+  <div class="w">Bulletin IA · Conseil en IA pour les organisations · Paris</div>
 </footer>
 
+<script>
+(function(){
+  // Les boutons de rendez-vous pré-remplissent le besoin
+  var txt={rdv:"Je souhaite un échange de 30 minutes. ",consultant:"Je suis consultant indépendant et je souhaite rejoindre votre équipe. "};
+  document.querySelectorAll("[data-prefill]").forEach(function(a){a.addEventListener("click",function(){
+    var m=document.getElementById("f-msg");if(m&&!m.value)m.value=txt[a.getAttribute("data-prefill")]||"";
+    setTimeout(function(){var f=document.getElementById("f-nom");if(f)f.focus({preventScroll:true})},450)})});
+})();
+</script>
 <script>
 (function(){
   // Mesure : rien n'est envoyé. Pour brancher un outil respectueux du consentement, écouter l'événement "site:track".
@@ -302,7 +451,7 @@ footer{padding-block:28px 40px;border-top:1px solid var(--line);font:14px/1.6 va
         if(!res.ok)throw new Error("envoi");return res.json()}).then(function(j){
         if(j&&(j.success===false||j.success==="false"))throw new Error("envoi");
         track("contact_envoye");
-        txt.innerHTML="<b>Merci, c'est envoyé.</b> Nous vous répondons sous deux jours ouvrés.";
+        txt.innerHTML="<b>Merci, c'est envoyé.</b> Nous vous proposons un créneau sous deux jours ouvrés.";
         form.hidden=true;box.classList.add("on");box.focus()}).catch(function(){
         sb.disabled=false;sb.textContent="Envoyer";openMail()});
     }else{openMail()}

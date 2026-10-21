@@ -1,6 +1,6 @@
 # Bulletin IA
 
-> Bulletin IA est une activité de conseil en intelligence artificielle appliquée aux organisations, basée à Paris, portée par Marie et Aloïs. Elle intervient sur tous les métiers (finance, contrôle de gestion, pilotage, commercial, administratif…) en quatre temps : audit interne des processus automatisables, présentation à la direction, déploiement d'outils sur un pilote, formation des équipes. Aucun gain n'est promis avant d'avoir été mesuré : l'IA assiste, le métier valide et la direction garde les arbitrages.
+> Bulletin IA est une activité de conseil en intelligence artificielle appliquée aux organisations, basée à Paris, portée par Marie et Aloïs. Premier échange gratuit de 30 minutes ; formation en trois niveaux (découvrir, pratiquer, automatiser). Elle intervient sur tous les métiers (finance, contrôle de gestion, pilotage, commercial, administratif…) en quatre temps : audit interne des processus automatisables, présentation à la direction, déploiement d'outils sur un pilote, formation des équipes. Aucun gain n'est promis avant d'avoir été mesuré : l'IA assiste, le métier valide et la direction garde les arbitrages.
 
 ## Pages principales
 
